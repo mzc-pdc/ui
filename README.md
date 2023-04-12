@@ -4,7 +4,7 @@
 
 <h1 align="center">MegazoneCloud UI</h1>
 
-**MegazoneCloud UI** contains foundational React UI component libraries for shipping new features faster.
+<p><strong>MegazoneCloud UI</strong> contains foundational React UI component libraries for shipping new features faster.</p>
 
 <hr/>
 
