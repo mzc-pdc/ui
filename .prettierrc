@@ -1,0 +1,14 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "tailingComma": "none",
+  "printWidth": 80,
+  "arrowParens": "avoid",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true
+    }
+  }
+}

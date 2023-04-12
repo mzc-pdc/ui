@@ -1,0 +1,128 @@
+{
+  "parser": "@typescript-eslint/parser", // typescript 전용 parser로 지정
+  "parserOptions": {
+    // "project": "./tsconfig.json",
+    "sourceType": "module",
+    // 자바스크립트 버전, 7은 ECMA2016
+    "ecmaVersion": 7,
+    // jsx 허용을 설정, back-end 설정이기 때문에 사용 안함
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "env": {
+    "node": true, // node 사용 OK
+    "browser": true, // browser 인식 Ok
+    "es6": true // es6 버전사용 OK
+  },
+  // "plugins": ["@typescript-eslint/eslint-plugin"],
+  "plugins": ["@typescript-eslint", "prettier", "react", "react-hooks"],
+  // react, react-hooks 가 있으면 Error Cannot get result from ~ 이 나옴.
+  "extends": [
+    "plugin:react/recommended", //recommended 붙여져 있는건 preset을 사용하겠다는 의미
+    "plugin:import/typescript",
+    "airbnb-base", // or airbnb-base
+    "prettier", // 8.0.0 버젼이상은 모두 prettier로 통합됨.
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  //plugin과 extends로 적용된 규칙에 덮어씌워져서 강제 설정할 수 있는 부분
+  "rules": {
+    //    // import 순서
+    //    "import/order": [
+    //      "error",
+    //      {
+    //        "groups": [
+    //          "builtin",
+    //          "external",
+    //          "internal",
+    //          "parent",
+    //          "sibling",
+    //          "index",
+    //          "object",
+    //          "type",
+    //          "unknown"
+    //        ],
+    //        "pathGroups": [
+    //          //react, next 관련은 항상 최상단에 import
+    //          {
+    //            "pattern": "{react*,react*/**}",
+    //            "group": "external",
+    //            "position": "before"
+    //          },
+    //          {
+    //            "pattern": "{@stores/**/*,@locales/**/*,@plugins/**/*,@dummy/**/*,@hooks/**/*}",
+    //            "group": "internal"
+    //          },
+    //          {
+    //            "pattern": "@features/**/*",
+    //            "group": "parent"
+    //          },
+    //          {
+    //            "pattern": "{@theme/**/*,@mui/**/*,@components/**/*}",
+    //            "group": "sibling"
+    //          },
+    //          { "pattern": "./**/*", "group": "index" },
+    //          { "pattern": "types", "group": "type" },
+    //          {
+    //            "pattern": "{constants/**/*,utils/**/*,**/*.styled}",
+    //            "group": "unknown"
+    //          }
+    //        ],
+    //        "pathGroupsExcludedImportTypes": ["react"],
+    //        "newlines-between": "always", // group 별로 띄어쓰기 추가
+    //        "alphabetize": {
+    //          "order": "asc" // 알파벳 오름차순으로 정렬
+    //        }
+    //      }
+    //    ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": true
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/newline-after-import":0,
+    "spaced-comment": 0,
+    "no-nested-ternary": 0,
+    "no-sequences": 0,
+    "react/prop-types": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react-hooks/rules-of-hooks": 0,
+    "no-extra-semi": "error",
+    "react/jsx-filename-extension": [
+      0,
+      { "extensions": [".js", ".jsx", ".ts", ".d.ts", ".tsx"] }
+    ], // 확장자로 js와 jsx ts tsx 허용하도록 수정
+    "arrow-parens": ["warn", "as-needed"], // 화살표 함수의 파라미터가 하나일때 괄호 생략
+    "no-unused-vars": ["off"], // 사용하지 않는 변수가 있을때 빌드에러가 나던 규칙 해제
+    "no-console": ["off"], // 콘솔을 쓰면 에러가 나던 규칙 해제
+    "import/prefer-default-export": ["off"], // export const 문을 쓸때 에러를 내는 규칙 해제
+    "import/no-dynamic-require": ["off"],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react-hooks/exhaustive-deps": "warn", // hooks의 의존성배열이 충분하지 않을때 강제로 의존성을 추가하는 규칙을 완화
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": [0, { "custom": "ignore" }], // props spreading을 허용하지 않는 규칙 해제
+    "linebreak-style": 0,
+    "import/extensions": 0,
+    "prettier/prettier": 0,
+    "no-use-before-define": 0,
+    "import/no-unresolved": 0,
+    "no-shadow": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "func-names": ["off"],
+    "quotes": ["off"],
+    "implicit-arrow-linebreak": ["off"],
+    "comma-dangle": ["off"],
+    "function-paren-newline": ["off"],
+    "operator-linebreak": ["off"],
+    "no-confusing-arrow": ["off"],
+    "arrow-body-style": ["off"],
+    "@typescript-eslint/ban-types": 0,
+    "no-unused-expressions": ["off"]
+  }
+}
