@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100" src="https://start.megazone.com/static/images/logo.png" alt="MEGAZONE CLOUD">
+  <img width="128" src="https://www.megazonecdn.com/pops/images/logo-mzc.png" alt="MEGAZONE CLOUD">
 </p>
 <h1 align="center">MegazoneCloud UI</h1>
 
