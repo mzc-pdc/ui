@@ -85,7 +85,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "rimraf dist && rollup -c ./scripts/rollup.config.js"
+    "build": "rimraf dist && rollup -c ./scripts/rollup.config.js",
+    "npm:login": "npm login --registry=https://npm.pkg.github.com"
   },
   "eslintConfig": {
     "extends": [

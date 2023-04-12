@@ -22,3 +22,8 @@ npm install @mzc/ui @mui/material @mui/icons-material @emotion/react @emotion/st
 // with yarn
 yarn add @mzc/ui @mui/material @mui/icons-material @emotion/react @emotion/styled
 ```
+
+## Package Publish
+```shell
+npm login --registry=https://npm.pkg.github.com
+```
