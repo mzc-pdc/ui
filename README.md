@@ -11,7 +11,7 @@
 <div align="center">
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/npm/v/latest.svg)
+![version](https://img.shields.io/npm/v/@mzc-pdc/ui/latest.svg)
 
 </div>
 
