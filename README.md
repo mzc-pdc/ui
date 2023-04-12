@@ -1,9 +1,12 @@
 <p align="center">
-  <img width="128" src="https://www.megazonecdn.com/pops/images/logo-mzc.png" alt="MEGAZONE CLOUD">
+  <img width="300" src="https://www.megazonecdn.com/pops/images/og-megazone-pops.png" alt="MEGAZONE CLOUD">
 </p>
+
 <h1 align="center">MegazoneCloud UI</h1>
 
-<p>**MegazoneCloud UI** contains foundational React UI component libraries for shipping new features faster.</p>
+**MegazoneCloud UI** contains foundational React UI component libraries for shipping new features faster.
+
+<hr/>
 
 <div align="center">
 
