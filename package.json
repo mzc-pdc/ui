@@ -1,14 +1,14 @@
 {
   "name": "@mzc-pdc/ui",
-  "version": "0.0.7",
-  "description": "MegazoneCloud React UI component libraries",
-  "author": "MegazoneCloud PDC Frontend chapter <dhmkchs@mz.co.kr>",
+  "version": "0.0.8",
+  "description": "MEGAZONE CLOUD React UI component libraries",
+  "author": "MEGAZONE CLOUD PDC Frontend chapter <dhmkchs@mz.co.kr>",
   "keywords": [
     "react",
     "ui",
-    "megazonecloud",
-    "pdc",
-    "PDC Frontend chapter"
+    "megazone cloud",
+    "product development center",
+    "frontend chapter"
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
