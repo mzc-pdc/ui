@@ -1,36 +1,47 @@
-import resolve from '@rollup/plugin-node-resolve';
+import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
-import { terser } from 'rollup-plugin-terser';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import typescript from 'rollup-plugin-typescript2';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import postcss from 'rollup-plugin-postcss';
 
-export default [
-  {
-    input: 'src/index.ts',
-    output: [
-      {
-        file: 'dist/cjs/index.js',
-        format: 'cjs',
-        sourcemap: true,
-      },
-      {
-        file: 'dist/esm/index.js',
-        format: 'esm',
-        sourcemap: true,
-      },
-    ],
-    plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
-      terser(),
-    ],
-  },
-  {
-    input: 'dist/esm/types/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts()],
-  },
-];
+import pkg from '../package.json' assert { type: 'json' };
+
+const extensions = ['js', 'jsx', 'ts', 'tsx'];
+
+export default {
+  input: './src/index.ts',
+  output: [
+    {
+      file: pkg.main,
+      format: 'cjs',
+      sourcemap: true,
+    },
+    {
+      file: pkg.module,
+      format: 'esm',
+      sourcemap: true,
+    },
+  ],
+  plugins: [
+    peerDepsExternal(),
+    nodeResolve({ extensions }),
+    typescript({
+      clean: true,
+      tsconfig: './tsconfig.json',
+    }),
+    babel({
+      babelHelpers: 'bundled',
+      exclude: 'node_modules/**',
+      extensions,
+      include: ['src/**/*'],
+    }),
+    commonjs({ include: 'node_modules/**' }),
+    postcss({
+      extract: false,
+      modules: true,
+      sourceMap: false,
+      use: [ 'sass' ]
+    })
+  ],
+};
