@@ -1,15 +1,10 @@
-import React, { FC, forwardRef } from 'react';
+import React, { FC } from 'react';
 
 import type { ButtonProps } from '@mui/material';
 import { StyledButton, Spinner, Text } from './styled';
 import type { StyledButtonProps } from './types';
 
 type ExtendedButtonProps = ButtonProps & StyledButtonProps;
-
-const Search = forwardRef<HTMLInputElement>((props, ref) => {
-  return <input ref={ref} type="search" />;
-});
-Search.displayName = 'Search';
 
 export const Button: FC<ExtendedButtonProps> = ({
   children,
