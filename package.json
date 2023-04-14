@@ -1,6 +1,6 @@
 {
   "name": "@mzc-pdc/ui",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "MEGAZONE CLOUD React UI component libraries",
   "author": "MEGAZONE CLOUD PDC Frontend chapter <dhmkchs@mz.co.kr>",
   "keywords": [
@@ -35,7 +35,8 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.11.16",
     "@mui/styles": "^5.11.16",
-    "@mui/system": "^5.11.16"
+    "@mui/system": "^5.11.16",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.4",
@@ -82,8 +83,26 @@
     "typescript": "^5.0.3"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.16",
+    "@mui/styles": "^5.11.16",
+    "@mui/system": "^5.11.16",
+    "@types/react": "^17.0.0 || ^18.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@emotion/react": {
+      "optional": true
+    },
+    "@emotion/styled": {
+      "optional": true
+    }
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
