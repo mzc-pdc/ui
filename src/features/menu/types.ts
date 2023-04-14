@@ -1,4 +1,4 @@
-export interface IMenuManagementProps {
+export interface IMenuPoPsManagementProps {
   iconSize?: number;
   title: string;
 }

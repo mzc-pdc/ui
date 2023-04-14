@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {FC} from 'react';
 import { IconButton, Tooltip } from '@mui/material';
 import { Build } from '@mui/icons-material';
-import { IMenuManagementProps } from './types';
+import { IMenuPoPsManagementProps } from './types';
 
-export const MenuManagement: React.FC<IMenuManagementProps> = ({
+export const MenuPoPsManagement: FC<IMenuPoPsManagementProps> = ({
   iconSize = 20,
-  title = ``,
+  title,
 }) => {
   return (
     <Tooltip title={title}>
