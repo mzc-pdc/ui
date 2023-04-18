@@ -479,5 +479,5 @@ export const defaultTheme: ThemeOptions = {
 // Create a theme instance.
 export const theme = createTheme(defaultTheme);
 
-process.env.NODE_ENV !== `production` &&
-  console.log(theme, '===================theme');
+// process.env.NODE_ENV !== `production` &&
+//   console.log(theme, '===================theme');
