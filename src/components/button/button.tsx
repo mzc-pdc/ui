@@ -29,7 +29,7 @@ export const Button: FC<ExtendedButtonProps> = ({
       <Text className={'text'}>{children}</Text>
       {loading && (
         <Spinner
-          size={size === 'small' ? 16 : size === 'medium' ? 20 : 24}
+          size={size === 'small' ? 17 : size === 'medium' ? 20 : 24}
           color={
             color
               ? variant === 'contained'
