@@ -9,14 +9,14 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: `PoP's feature menu`
+        component: `PoP's feature menu`,
       },
     },
   },
   args: {
     title: `관리콘솔`,
     iconSize: 20,
-  }
+  },
 } satisfies Meta<typeof MenuPoPsManagement>;
 
 export default meta;
