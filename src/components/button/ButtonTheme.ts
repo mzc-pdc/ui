@@ -6,7 +6,7 @@ export const ButtonTheme = (
 ): Components['MuiButton'] => ({
   defaultProps: {},
   styleOverrides: {
-    root: ({ ownerState }) => ({
+    root: {
       textTransform: 'none',
       fontWeight: '400',
       boxShadow: `none`,
@@ -15,13 +15,25 @@ export const ButtonTheme = (
           lineHeight: `1`,
         },
       },
-      ...(ownerState.color &&
-        ownerState.color !== 'inherit' && {
-          '&:hover': {
-            backgroundColor: cloudplexPalette[ownerState.color],
-          },
-        }),
-    }),
+    },
+    sizeSmall: {
+      height: `32px`,
+      padding: '6px 8px',
+      fontSize: `14px`,
+    },
+    sizeMedium: {
+      height: `40px`,
+      padding: '10px 20px',
+      fontSize: `16px`,
+    },
+    sizeLarge: {
+      height: `56px`,
+      padding: `16px 32px`,
+      fontSize: `1rem`,
+      '.MuiButton-startIcon': {
+        marginRight: `24px`,
+      },
+    },
     containedInherit: {
       backgroundColor: cloudplexPalette.secondary.light,
       color: cloudplexPalette.common.white,
@@ -31,11 +43,6 @@ export const ButtonTheme = (
         backgroundColor: alpha(cloudplexPalette.secondary.light, 0.88),
         boxShadow: `0 3px 6px 0 rgba(0, 0, 0, 0.32)`,
       },
-      ' &:active, &:focus': {
-        opacity: 1,
-        backgroundColor: alpha(cloudplexPalette.secondary.light, 0.84),
-        boxShadow: `none`,
-      },
       '&:disabled': {
         color: alpha(cloudplexPalette.secondary[800], 0.48),
         borderColor: alpha(cloudplexPalette.secondary[800], 0.16),
@@ -43,13 +50,9 @@ export const ButtonTheme = (
       },
     },
     outlinedInherit: {
-      border: `1px solid`,
-      borderColor: cloudplexPalette.secondary.main,
+      border: `1px solid ${cloudplexPalette.secondary.light}`,
       '&:hover': {
         backgroundColor: alpha(cloudplexPalette.secondary.main, 0.08),
-      },
-      '&:active, &:focus': {
-        backgroundColor: alpha(cloudplexPalette.secondary.main, 0.12),
       },
       '&:disabled': {
         borderColor: alpha(cloudplexPalette.secondary.light, 0.16),
@@ -61,9 +64,6 @@ export const ButtonTheme = (
       '&:hover': {
         backgroundColor: alpha(cloudplexPalette.secondary.light, 0.08),
       },
-      '&:active, &:focus': {
-        backgroundColor: alpha(cloudplexPalette.secondary.light, 0.12),
-      },
       '&:disabled': {
         color: alpha(cloudplexPalette.secondary.light, 0.48),
       },
@@ -72,7 +72,10 @@ export const ButtonTheme = (
       ...(ownerState.color &&
         ownerState.color !== 'inherit' && {
           '&:hover': {
-            backgroundColor: cloudplexPalette[ownerState.color].main,
+            backgroundColor: alpha(
+              cloudplexPalette[ownerState.color].main,
+              0.08
+            ),
           },
         }),
     }),
@@ -95,42 +98,6 @@ export const ButtonTheme = (
   },
   variants: [
     {
-      props: {
-        size: 'small',
-      },
-      style: {
-        height: `32px`,
-        paddingLeft: `8px`,
-        paddingRight: `8px`,
-        fontSize: `14px`,
-      },
-    },
-    {
-      props: {
-        size: 'medium',
-      },
-      style: {
-        height: `40px`,
-        paddingLeft: `20px`,
-        paddingRight: `20px`,
-        fontSize: `14px`,
-      },
-    },
-    {
-      props: {
-        size: 'large',
-      },
-      style: {
-        height: `56px`,
-        paddingLeft: `32px`,
-        paddingRight: `32px`,
-        fontSize: `1rem`,
-        '.MuiButton-startIcon': {
-          marginRight: `24px`,
-        },
-      },
-    },
-    {
       props: { variant: 'solid' },
       style: {
         textTransform: 'none',
@@ -141,7 +108,7 @@ export const ButtonTheme = (
         fontSize: `14px`,
         '&:hover': {
           textDecoration: `underline`,
-          backgroundColor: `#f00`,
+          backgroundColor: `transparent`,
         },
         '&:focus': {
           backgroundColor: `transparent`,
