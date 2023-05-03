@@ -74,7 +74,7 @@ export const ButtonTheme = (
           '&:hover': {
             backgroundColor: alpha(
               cloudplexPalette[ownerState.color].main,
-              0.08
+              0.92
             ),
           },
         }),
@@ -82,7 +82,7 @@ export const ButtonTheme = (
     text: {
       '&:hover': {
         '&:hover': {
-          backgroundColor: alpha(cloudplexPalette.common.white, 0.08),
+          backgroundColor: alpha(cloudplexPalette.secondary.main, 0.08),
         },
         '&:focus': {
           backgroundColor: alpha(cloudplexPalette.common.white, 0.12),

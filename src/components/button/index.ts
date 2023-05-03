@@ -1,2 +1,2 @@
-export * from './button';
+export * from './ButtonTheme';
 export * from './types';
