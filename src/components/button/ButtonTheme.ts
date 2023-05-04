@@ -1,6 +1,18 @@
 import { alpha } from '@mui/material';
 import { Components } from '@mui/material/styles/components';
 
+declare module '@mui/material/Button' {
+  interface ButtonPropsVariantOverrides {
+    solid: true;
+  }
+  export interface ButtonPropsColorOverrides {
+    inherit: true;
+    grayscale: true;
+    grayscaleSecondary: true;
+    default: true;
+  }
+}
+
 export const ButtonTheme = (
   cloudplexPalette: any
 ): Components['MuiButton'] => ({
