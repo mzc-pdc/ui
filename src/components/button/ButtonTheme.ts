@@ -13,9 +13,7 @@ declare module '@mui/material/Button' {
   }
 }
 
-export const ButtonTheme = (
-  cloudplexPalette: any
-): Components['MuiButton'] => ({
+export const ButtonTheme = (palette: any): Components['MuiButton'] => ({
   defaultProps: {},
   styleOverrides: {
     root: {
@@ -31,12 +29,12 @@ export const ButtonTheme = (
     sizeSmall: {
       height: `32px`,
       padding: '6px 8px',
-      fontSize: `14px`,
+      fontSize: `0.875rem`,
     },
     sizeMedium: {
       height: `40px`,
       padding: '10px 20px',
-      fontSize: `16px`,
+      fontSize: `1rem`,
     },
     sizeLarge: {
       height: `56px`,
@@ -47,63 +45,60 @@ export const ButtonTheme = (
       },
     },
     containedInherit: {
-      backgroundColor: cloudplexPalette.secondary.light,
-      color: cloudplexPalette.common.white,
+      backgroundColor: palette.secondary.light,
+      color: palette.common.white,
       boxShadow: `none`,
       '&:hover': {
         opacity: 1,
-        backgroundColor: alpha(cloudplexPalette.secondary.light, 0.88),
+        backgroundColor: alpha(palette.secondary.light, 0.88),
         boxShadow: `0 3px 6px 0 rgba(0, 0, 0, 0.32)`,
       },
       '&:disabled': {
-        color: alpha(cloudplexPalette.secondary[800], 0.48),
-        borderColor: alpha(cloudplexPalette.secondary[800], 0.16),
-        backgroundColor: alpha(cloudplexPalette.secondary[800], 0.16),
+        color: alpha(palette.secondary[800], 0.48),
+        borderColor: alpha(palette.secondary[800], 0.16),
+        backgroundColor: alpha(palette.secondary[800], 0.16),
       },
     },
     outlinedInherit: {
-      border: `1px solid ${cloudplexPalette.secondary.light}`,
+      border: `1px solid ${palette.secondary.light}`,
       '&:hover': {
-        backgroundColor: alpha(cloudplexPalette.secondary.main, 0.08),
+        backgroundColor: alpha(palette.secondary.main, 0.08),
       },
       '&:disabled': {
-        borderColor: alpha(cloudplexPalette.secondary.light, 0.16),
-        color: alpha(cloudplexPalette.secondary.light, 0.48),
+        borderColor: alpha(palette.secondary.light, 0.16),
+        color: alpha(palette.secondary.light, 0.48),
       },
     },
     textInherit: {
-      color: cloudplexPalette.secondary.main,
+      color: palette.secondary.main,
       '&:hover': {
-        backgroundColor: alpha(cloudplexPalette.secondary.light, 0.08),
+        backgroundColor: alpha(palette.secondary.light, 0.08),
       },
       '&:disabled': {
-        color: alpha(cloudplexPalette.secondary.light, 0.48),
+        color: alpha(palette.secondary.light, 0.48),
       },
     },
     contained: ({ ownerState }) => ({
       ...(ownerState.color &&
         ownerState.color !== 'inherit' && {
           '&:hover': {
-            backgroundColor: alpha(
-              cloudplexPalette[ownerState.color].main,
-              0.92
-            ),
+            backgroundColor: alpha(palette[ownerState.color].main, 0.92),
           },
         }),
     }),
     text: {
       '&:hover': {
         '&:hover': {
-          backgroundColor: alpha(cloudplexPalette.secondary.main, 0.08),
+          backgroundColor: alpha(palette.secondary.main, 0.08),
         },
         '&:focus': {
-          backgroundColor: alpha(cloudplexPalette.common.white, 0.12),
+          backgroundColor: alpha(palette.common.white, 0.12),
         },
         '&:active': {
-          backgroundColor: alpha(cloudplexPalette.common.white, 0.16),
+          backgroundColor: alpha(palette.common.white, 0.16),
         },
         '&:disabled': {
-          color: alpha(cloudplexPalette.secondary.light, 0.48),
+          color: alpha(palette.secondary.light, 0.48),
         },
       },
     },
@@ -113,11 +108,11 @@ export const ButtonTheme = (
       props: { variant: 'solid' },
       style: {
         textTransform: 'none',
-        color: cloudplexPalette.primary.main,
+        color: palette.primary.main,
         boxShadow: `none`,
         height: `auto`,
         padding: `0`,
-        fontSize: `14px`,
+        fontSize: `0.875px`,
         '&:hover': {
           textDecoration: `underline`,
           backgroundColor: `transparent`,
@@ -129,7 +124,7 @@ export const ButtonTheme = (
           backgroundColor: `transparent`,
         },
         '&:disabled': {
-          color: alpha(cloudplexPalette.secondary.main, 0.48),
+          color: alpha(palette.secondary.main, 0.48),
           textDecoration: `underline`,
         },
       },
