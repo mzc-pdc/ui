@@ -1,6 +1,7 @@
 import { Preview } from '@storybook/react';
 import { ThemeProvider, StyledEngineProvider } from '@mui/system';
 import { theme } from '../src/themes';
+import React from 'react';
 
 const preview: Preview = {
   parameters: {

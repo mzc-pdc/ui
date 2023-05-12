@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 
 import type { ButtonProps } from '@mui/material';
-import { StyledButton, Spinner, Text } from './styled';
+import {Typography} from "@mui/material";
+import { StyledButton, Spinner, Children } from './styled';
 import type { StyledButtonProps } from './types';
 
 type ExtendedButtonProps = ButtonProps & StyledButtonProps;
 
 export const Button: FC<ExtendedButtonProps> = ({
   children,
-  type,
   variant,
   color,
   size,
@@ -18,15 +18,14 @@ export const Button: FC<ExtendedButtonProps> = ({
 }) => {
   return (
     <StyledButton
-      {...restProps}
-      type={type}
       variant={variant}
       color={color}
       size={size}
       fullWidth={fullWidth}
       loading={loading}
+      {...restProps}
     >
-      <Text className={'text'}>{children}</Text>
+      <Children style={{opacity: loading? 0:1}}>{children}</Children>
       {loading && (
         <Spinner
           size={size === 'small' ? 16 : size === 'medium' ? 20 : 24}
