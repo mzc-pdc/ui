@@ -9,16 +9,17 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: 'Button Description'
+        component: 'Button Description',
       },
     },
   },
-  args: { //storybook common args
+  args: {
+    //storybook common args
     color: `primary`,
     children: `Button`,
     size: `medium`,
     disabled: false,
-  }
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;

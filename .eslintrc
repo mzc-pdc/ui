@@ -85,7 +85,7 @@
       }
     ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "import/newline-after-import":0,
+    "import/newline-after-import": 0,
     "spaced-comment": 0,
     "no-nested-ternary": 0,
     "no-sequences": 0,

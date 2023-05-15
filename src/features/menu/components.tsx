@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import { IconButton, Tooltip } from '@mui/material';
 import { Build } from '@mui/icons-material';
 import { IMenuPoPsManagementProps } from './types';
