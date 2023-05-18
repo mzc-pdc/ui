@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import { ExtendedButtonProps, StyledButton } from './styled';
+import { StyledButton } from './styled';
+import { IButtonProps } from './types';
 
-export const Button: FC<ExtendedButtonProps> = ({ children, ...props }) => {
+export const Button: FC<IButtonProps> = ({ children, ...props }) => {
   return <StyledButton {...props}>{children}</StyledButton>;
 };

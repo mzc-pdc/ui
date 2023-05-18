@@ -16,7 +16,7 @@ import {
   PaletteColorOptions,
   PaletteOptions,
 } from '@mui/material/styles';
-import { ButtonTheme } from '../components/button/ButtonTheme';
+import { ButtonTheme } from '../components';
 
 declare module '@mui/material/styles' {
   interface Palette {

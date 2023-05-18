@@ -10,7 +10,7 @@ import React, { FC } from 'react';
 // import theme from '@theme';
 // import fp from 'lodash/fp';
 
-import { TextFieldProps } from '@mui/material';
+// import { TextFieldProps } from '@mui/material';
 
 import { StyledTextField } from './styled';
 import { ITextFieldProps } from './types';
@@ -166,8 +166,6 @@ import { ITextFieldProps } from './types';
 //   );
 // };
 
-export const TextField: FC<TextFieldProps & ITextFieldProps> = ({
-  ...restProps
-}) => {
+export const TextField: FC<ITextFieldProps> = ({ ...restProps }) => {
   return <StyledTextField {...restProps} />;
 };

@@ -1,15 +1,9 @@
-import {
-  Button as MuiButton,
-  ButtonProps as MuiButtonProps,
-} from '@mui/material';
+import { Button as MuiButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
-
-export interface ExtendedButtonProps extends MuiButtonProps {
-  // additional prop keys that do not exist in MuiThemeProps
-}
+import { IButtonProps } from './types';
 
 export const StyledButton = styled(MuiButton, {
   shouldForwardProp: prop => ![''].includes(String(prop)),
-})<ExtendedButtonProps>(({}) => ({
-  // style properties
+})<IButtonProps>(({ theme }) => ({
+  // Add style when props key is added
 }));
