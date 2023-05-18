@@ -42,3 +42,9 @@ export const text: Story = {
     variant: `text`,
   },
 };
+
+export const solid: Story = {
+  args: {
+    variant: `solid`,
+  },
+};
