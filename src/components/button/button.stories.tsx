@@ -40,6 +40,12 @@ export const loading: Story = {
     loading: true
   },
 };
+export const rounded: Story = {
+    args: {
+        variant: `contained`,
+        rounded: true
+    },
+};
 
 
 export const Variants: ComponentStory<typeof Button> = () => (
@@ -48,7 +54,7 @@ export const Variants: ComponentStory<typeof Button> = () => (
         <Button variant="text">Text Button</Button>
         <Button variant="contained"  >Contained Button</Button>
         <Button variant="outlined"  >Outlined Button</Button>
-        <Button variant="round" >Round Button</Button>
+        <Button variant="contained" rounded >Round Button</Button>
     </Grid>
 );
 

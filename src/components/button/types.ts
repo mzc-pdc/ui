@@ -12,7 +12,6 @@ declare module '@mui/material/CircularProgress' {
 declare module '@mui/material/Button' {
     interface ButtonPropsVariantOverrides {
         solid: true;
-        round: true;
     }
     export interface ButtonPropsColorOverrides {
         inherit: true;
@@ -24,5 +23,6 @@ declare module '@mui/material/Button' {
 export interface ButtonProps extends MuiButtonProps {
   // additional prop keys that do not exist in MuiThemeProps
     loading?: boolean;
+    rounded?:boolean;
 }
 

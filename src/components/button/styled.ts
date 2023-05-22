@@ -9,12 +9,17 @@ export const Spinner = styled(CircularProgress)(() => ({
 }));
 
 export const StyledButton = styled(MuiButton, {
-  shouldForwardProp: prop => !['loading'].includes(String(prop)),
-})<ButtonProps>(({ loading }) => ({
+  shouldForwardProp: prop => !['loading', 'rounded'].includes(String(prop)),
+})<ButtonProps>(({theme, loading, rounded }) => ({
   ...(loading && {
     'span:not(.MuiCircularProgress-root)': {
       opacity:0,
     }
+  }),
+  ...(rounded && {
+    borderRadius: theme.spacing(7),
+    paddingLeft: theme.spacing(10),
+    paddingRight: theme.spacing(10),
   })
 }));
 

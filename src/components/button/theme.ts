@@ -5,7 +5,7 @@ import { Components } from '@mui/material/styles/components';
 export const ButtonTheme = (theme: any): Components['MuiButton'] => ({
   defaultProps: {},
   styleOverrides: {
-    root: ({ownerState}) => ({
+    root: {
       textTransform: `none`,
       fontWeight: '400',
       boxShadow: `none`,
@@ -15,39 +15,7 @@ export const ButtonTheme = (theme: any): Components['MuiButton'] => ({
           lineHeight: `1`,
         },
       },
-      ...(ownerState.variant === "round" && {
-        ...(ownerState.color && {
-          color: theme.palette[ownerState.color].contrastText,
-          borderColor: theme.palette[ownerState.color].main,
-          backgroundColor: theme.palette[ownerState.color].main,
-          boxShadow: `none`,
-          "&:hover": {
-            backgroundColor: theme.palette[ownerState.color].main,
-            boxShadow: `0 3px 6px 0 rgba(0, 0, 0, 0.32)`,
-            ".MuiTouchRipple-root": {
-              backgroundColor: alpha(theme.palette.common.white, 0.08)
-            }
-          },
-          "&:focus": {
-            backgroundColor: theme.palette[ownerState.color].main,
-            ".MuiTouchRipple-root": {
-              backgroundColor: alpha(theme.palette.common.white, 0.12)
-            }
-          },
-          "&:active": {
-            backgroundColor: theme.palette[ownerState.color].main,
-            boxShadow: `0 3px 6px 0 rgba(0, 0, 0, 0.32)`,
-            ".MuiTouchRipple-root": {
-              backgroundColor: alpha(theme.palette.common.white, 0.16)
-            }
-          },
-          "&.Mui-disabled": {
-            background: alpha(theme.palette.secondary.main, 0.16),
-            color: alpha(theme.palette.secondary.main, 0.48)
-          }
-        })
-      }),
-    }),
+    },
     sizeSmall:{
       // padding: `6px 8px`,
       padding: `0.375rem 0.5rem`,
@@ -153,14 +121,6 @@ export const ButtonTheme = (theme: any): Components['MuiButton'] => ({
           textDecoration: `underline`,
         },
       },
-    },
-    {
-      props: {variant: 'round'},
-      style: {
-        borderRadius: theme.spacing * 7,
-        paddingLeft: theme.spacing * 10,
-        paddingRight: theme.spacing * 10,
-      }
     },
   ],
 });
