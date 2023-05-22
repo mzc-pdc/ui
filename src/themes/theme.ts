@@ -23,6 +23,8 @@ import {
 import {SelectTheme} from "../components/select/theme";
 import {AutocompleteTheme} from "../components/autocomplete/theme";
 import {SwitchTheme} from "../components/switch/theme";
+import {ButtonGroupTheme} from "../components/buttonGroup/theme";
+import {ToggleButtonGroupTheme, ToggleButtonTheme} from "../components/toggleButton/theme";
 
 export const defaultTheme: ThemeOptions = {
     breakpoints: {
@@ -39,6 +41,9 @@ export const defaultTheme: ThemeOptions = {
     palette,
     typography,
     spacing: 4,
+    shape: {
+        borderRadius: 3
+    }
 };
 
 const overrideTheme = createTheme({
@@ -53,6 +58,7 @@ const overrideTheme = createTheme({
         `,
         },
         MuiButton: {...ButtonTheme(defaultTheme),},
+        MuiButtonGroup: {...ButtonGroupTheme(defaultTheme),},
         MuiIconButton: {...IconButtonTheme(defaultTheme),},
         MuiChip: {...ChipTheme(defaultTheme),},
         MuiCheckbox: {...CheckboxTheme(defaultTheme),},
@@ -65,6 +71,8 @@ const overrideTheme = createTheme({
         MuiSelect: {...SelectTheme(defaultTheme),},
         MuiAutocomplete: {...AutocompleteTheme(defaultTheme),},
         MuiSwitch: {...SwitchTheme(defaultTheme),},
+        MuiToggleButton: {...ToggleButtonTheme(defaultTheme)},
+        MuiToggleButtonGroup: {...ToggleButtonGroupTheme(defaultTheme)},
     }
 });
 export const theme = createTheme(overrideTheme);

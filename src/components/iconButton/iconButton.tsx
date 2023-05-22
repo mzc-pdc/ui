@@ -1,15 +1,16 @@
 import React, { FC } from 'react';
 
 import { StyledIconButton, Spinner } from './styled';
-import type { ExtendedIconButtonProps } from './types';
+import {ExtendedIconButtonProps} from "./types";
 
-export const IconButton: FC<ExtendedIconButtonProps> = (props,{
+export const IconButton: FC<ExtendedIconButtonProps> = ( props,{
   ...restProps
 }) => {
   return (
     <StyledIconButton
         {...props}
         {...restProps}
+
     >
       {props.children}
       {props.loading && (

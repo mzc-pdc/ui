@@ -1,8 +1,13 @@
-import  { MouseEventHandler } from 'react';
 import {
   IconButtonProps as MuiIconButtonProps,
   CircularProgressProps as MuiCircularProgressProps,
+
 } from '@mui/material';
+
+import {NonForwardedProps} from '@mui/system';
+
+// to not spread `rounded` prop to DOM
+NonForwardedProps.set('MuiIconButton', ['circled']);
 
 /* overrides */
 declare module '@mui/material/IconButton' {
@@ -16,8 +21,8 @@ declare module '@mui/material/IconButton' {
   export interface IconButtonPropsSizeOverrides {
     Xsmall: true;
   }
-  interface IconButtonPropsVariantOverrides {
-    dashed: true;
+  interface IconButtonExtraProps {
+    circled?: boolean
   }
 }
 
@@ -44,16 +49,11 @@ export type Color =
   | 'grayscaleSecondary'
   | 'default'
   | undefined;
-export type Size = 'Xsmall' | 'small' | 'medium' | 'large';
 
-export interface StyledIconButtonProps  {
+
+export interface StyledIconButtonProps extends MuiIconButtonProps {
   color?: Color;
   variant?: Variant;
-  size?: Size;
-  disabled?: boolean;
-  disableFocusRipple?: boolean;
-  disableRipple?: boolean;
-  edge?: boolean;
   circled?: boolean;
   loading?: boolean;
   active?: boolean;

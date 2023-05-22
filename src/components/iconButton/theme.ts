@@ -1,14 +1,17 @@
 import {alpha} from '@mui/material';
 import {Components} from '@mui/material/styles/components';
+import { StyledIconButtonProps} from "./types";
+
 
 export const IconButtonTheme = (
-    theme: any
+    theme: any,
 ): Components['MuiIconButton'] => ({
     defaultProps: {},
     styleOverrides: {
+
         root: ({ownerState}) => ({
             color: theme.palette.secondary.main,
-            borderRadius: 3,
+            borderRadius: theme.shape.borderRadius,
             "&:hover": {
                 backgroundColor: alpha(theme.palette.secondary.main, 0.08)
             },
@@ -28,7 +31,6 @@ export const IconButtonTheme = (
                 }),
             }),
             ...(ownerState.variant === 'contained' && {
-
                 ...(ownerState.color && ownerState.color !== 'inherit' && {
                     color: theme.palette[ownerState.color].contrastText,
                     borderColor: theme.palette[ownerState.color].main,
@@ -95,7 +97,7 @@ export const IconButtonTheme = (
                 height: 18,
             }),
             ...(ownerState.circled === true && {
-                borderRadius: theme.borderRadius,
+                borderRadius: `50%`
             }),
         }),
         sizeSmall: {
@@ -141,5 +143,38 @@ export const IconButtonTheme = (
                 },
             }),
         }),
+
     },
+    variants: [
+        {
+            props: { circled: true } as StyledIconButtonProps,
+            style: {
+                borderRadius: '50%'
+            }
+        },
+        {
+            props: {variant: "dashed"} as StyledIconButtonProps,
+            style: {
+                border: `1px dashed ${theme.palette.secondary[600]}`,
+                backgroundColor: theme.palette.grayscaleSecondary[50],
+                '.MuiSvgIcon-root': {
+                    color: theme.palette.secondary.main,
+                    transition: `all linear 0.2s`,
+                },
+                '&:hover': {
+                    backgroundColor: theme.palette.secondary.main,
+                    borderColor: theme.palette.secondary.main,
+                    '.MuiSvgIcon-root': {
+                        color: theme.palette.secondary.contrastText
+                    },
+                },
+            }
+        },
+        {
+            props: {loading: true} as StyledIconButtonProps,
+            style: {
+                background: `blue`
+            }
+        }
+    ]
 });

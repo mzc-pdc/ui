@@ -73,7 +73,7 @@ export const Variants: ComponentStory<typeof IconButton> = () => (
         <Grid item>
             <Grid container alignItems={'center'}>
                 <Grid item xs={3}>circled</Grid>
-                <Grid item><IconButton circled><Build/></IconButton></Grid>
+                <Grid item><IconButton variant={'outlined'} circled={true}><Build/></IconButton></Grid>
             </Grid>
         </Grid>
     </Grid>
