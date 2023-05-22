@@ -1,3 +1,3 @@
 export * from './button';
-export * from './button-theme';
+export * from './theme';
 export * from './types';
