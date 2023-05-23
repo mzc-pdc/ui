@@ -7,7 +7,7 @@ export const IconButtonTheme = (
   styleOverrides: {
     root: ({ ownerState }) => ({
       borderRadius: theme.borderRadius,
-      ...(ownerState.size === 'Xsmall' && {
+      ...(ownerState.size === 'xsmall' && {
         width: 18,
         height: 18,
       }),

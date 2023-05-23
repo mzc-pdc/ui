@@ -127,7 +127,7 @@ export const StyledIconButton = styled(MuiIconButton, {
   },
   ...((color === undefined || color === `inherit`) && colorInheritMixIn({theme, variant})),
   ...((variant !== undefined && (color !== undefined && color !== 'inherit')) && variantMixIn({ theme, variant, color })),
-  ...(loading && {
+  ...(loading === true && {
     pointerEvents: `none`,
     '> svg': {
       opacity:0,

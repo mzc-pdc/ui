@@ -132,7 +132,7 @@ export const Color: ComponentStory<typeof IconButton> = () => (
 );
 export const Size: ComponentStory<typeof IconButton> = () => (
     <Grid container alignItems={'center'} gap={2}>
-        <IconButton variant="contained" size={'Xsmall'}><DeleteIcon /></IconButton>
+        <IconButton variant="contained" size={'xsmall'}><DeleteIcon /></IconButton>
         <IconButton variant="contained" size={'small'}><DeleteIcon /></IconButton>
         <IconButton variant="contained" size={'medium'}><DeleteIcon /></IconButton>
         <IconButton variant="contained" size={'large'}><DeleteIcon /></IconButton>

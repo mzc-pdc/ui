@@ -16,7 +16,7 @@ declare module '@mui/material/IconButton' {
     // ... 커스텀으로 추가 해야할 컬러들.
   }
   export interface IconButtonPropsSizeOverrides {
-    Xsmall: true;
+    xsmall: true;
   }
 }
 export interface IconButtonProps extends MuIconButtonProps {
