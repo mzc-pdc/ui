@@ -1,7 +1,22 @@
 import React, { FC } from 'react';
-import { StyledIconButton } from './styled';
-import { IIconButtonProps } from './types';
+import { StyledIconButton , Spinner } from './styled';
+import { IconButtonProps } from './types';
 
-export const IconButton: FC<IIconButtonProps> = ({ children, ...props }) => {
-  return <StyledIconButton {...props}>{children}</StyledIconButton>;
+export const IconButton: FC<IconButtonProps> = ({ children, ...props }) => {
+  return <StyledIconButton {...props}>{children}
+    {props.loading && (
+        <Spinner
+            size={props.size === 'Xsmall' ? 10 : props.size === 'small' ? 16 : props.size === 'medium' ? 20 : 24}
+            color={
+              props.color
+                  ? props.variant === 'contained'
+                      ? 'inherit'
+                      : props.color === 'inherit'
+                          ? 'secondary'
+                          : props.color
+                  : `inherit`
+            }
+        />
+    )}
+  </StyledIconButton>;
 };

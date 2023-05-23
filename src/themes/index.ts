@@ -16,7 +16,7 @@ import {
   PaletteColorOptions,
   PaletteOptions,
 } from '@mui/material/styles';
-import { ButtonTheme } from '../components';
+import { ButtonTheme, IconButtonTheme } from '../components';
 
 declare module '@mui/material/styles' {
   interface Palette {
@@ -473,11 +473,7 @@ export const defaultTheme: ThemeOptions = {
       },
     },
     MuiIconButton: {
-      styleOverrides: {
-        root: {
-          padding: 10,
-        },
-      },
+      ...IconButtonTheme(palette),
     },
     MuiButton: {
       ...ButtonTheme(palette),
