@@ -1,4 +1,5 @@
 // export * from './app-bar';
 export * from './button';
-// export * from './chip';
-// export * from './text-field';
+export * from './icon-button';
+export * from './chip';
+export * from './text-field';
