@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { StyledTextField, StyledFormControl, StyledFormHelperText } from './styled';
+import { StyledTextField } from './styled';
 import { TextFieldProps } from './types';
 
 export const TextField: FC<TextFieldProps> = (props, {
@@ -13,25 +13,3 @@ export const TextField: FC<TextFieldProps> = (props, {
       />
   )
 }
-
-export const FormControl: FC<TextFieldProps> = (props, {
-    ...restProps
-}) => {
-    return (
-        <StyledFormControl
-            {...props}
-            {...restProps}
-        />
-    )
-}
-export const FormHelperText: FC<TextFieldProps> = (props, {
-    ...restProps
-}) => {
-    return (
-        <StyledFormHelperText
-            {...props}
-            {...restProps}
-        />
-    )
-}
-

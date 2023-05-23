@@ -1,64 +1,70 @@
-import { createTheme, ThemeOptions } from '@mui/material/styles';
-import { typography } from './typography';
-import { palette } from './palette';
+import {createTheme, ThemeOptions} from '@mui/material/styles';
+import {typography} from './typography';
+import {palette} from './palette';
 import {
-  ButtonTheme,
-  IconButtonTheme,
-  FilledInputTheme,
-  FormHelperTextTheme,
-  FormLabelTheme,
-  OutlinedInputTheme,
-  TextFieldTheme
+    ButtonTheme,
+    IconButtonTheme,
+    FilledInputTheme,
+    OutlinedInputTheme,
+    TextFieldTheme,
+    FormControlTheme,
+    FormControlLabelTheme,
+    FormGroupTheme,
+    FormHelperTextTheme,
+    FormLabelTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
-  interface BreakpointOverrides {
-    xs: true;
-    sm: true;
-    md: true;
-    lg: true;
-    xl: true;
-    xxl: true;
-  }
+    interface BreakpointOverrides {
+        xs: true;
+        sm: true;
+        md: true;
+        lg: true;
+        xl: true;
+        xxl: true;
+    }
 }
 export const defaultTheme: ThemeOptions = {
-  breakpoints: {
-    keys: [`xs`, `sm`, `md`, `lg`, `xl`, `xxl`],
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 840,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1440
+    breakpoints: {
+        keys: [`xs`, `sm`, `md`, `lg`, `xl`, `xxl`],
+        values: {
+            xs: 0,
+            sm: 600,
+            md: 840,
+            lg: 1024,
+            xl: 1280,
+            xxl: 1440
+        }
+    },
+    palette,
+    typography,
+    spacing: 4,
+    shape: {
+        borderRadius: 3,
     }
-  },
-  palette,
-  typography,
-  spacing: 4,
-  shape: {
-    borderRadius: 3,
-  }
 };
 
 export const overrideTheme = {
-  ...defaultTheme,
-  components: {
-    MuiButton: {
-      ...ButtonTheme(defaultTheme),
+    ...defaultTheme,
+    components: {
+        MuiButton: {
+            ...ButtonTheme(defaultTheme),
+        },
+        MuiIconButton: {
+            ...IconButtonTheme(defaultTheme),
+        },
+        MuiTextField: {...TextFieldTheme(defaultTheme),},
+        MuiOutlinedInput: {...OutlinedInputTheme(defaultTheme),},
+        MuiFilledInput: {...FilledInputTheme(defaultTheme),},
+        MuiFormControl: {...FormControlTheme(defaultTheme),},
+        MuiFormLabel: {...FormLabelTheme(defaultTheme),},
+        MuiFormGroup: {...FormGroupTheme(defaultTheme)},
+        MuiFormControlLabel: {...FormControlLabelTheme(defaultTheme)},
+        MuiFormHelperText: {...FormHelperTextTheme(defaultTheme),},
+        MuiCssBaseline: {
+            styleOverrides: () => ({}),
+        },
     },
-    MuiIconButton: {
-      ...IconButtonTheme(defaultTheme),
-    },
-    MuiTextField: {...TextFieldTheme(defaultTheme),},
-    MuiOutlinedInput: {...OutlinedInputTheme(defaultTheme),},
-    MuiFilledInput: {...FilledInputTheme(defaultTheme),},
-    MuiFormLabel: {...FormLabelTheme(defaultTheme),},
-    MuiFormHelperText: {...FormHelperTextTheme(defaultTheme),},
-    MuiCssBaseline: {
-      styleOverrides: () => ({}),
-    },
-  },
 };
 // Create a theme instance.
 export const theme = createTheme(overrideTheme);

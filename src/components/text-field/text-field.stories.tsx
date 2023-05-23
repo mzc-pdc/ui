@@ -5,8 +5,10 @@ import ErrorIcon from '@mui/icons-material/Error';
 import SearchIcon from '@mui/icons-material/Search';
 import TuneIcon from '@mui/icons-material/Tune';
 import {Grid, Box, Stack, InputAdornment} from "@mui/material";
-import {TextField, FormControl, FormHelperText} from './text-field';
+import {TextField} from './text-field';
 import {IconButton} from "../icon-button";
+import {FormHelperText} from "../form-helper-text";
+import {FormControl} from "../form-control";
 
 const meta = {
     title: 'Components/TextField',

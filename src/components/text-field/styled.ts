@@ -1,8 +1,5 @@
 import {
     TextField as MuiTextField,
-    FormControl as MuiFormControl,
-    FormHelperText as MuiFormHelperText,
-    OutlinedInput as MuiOutlinedInput,
     FilledInput as MuiFilledInput,
 } from '@mui/material';
 import {TextFieldProps as MuiTextFieldProps} from '@mui/material/TextField/TextField';
@@ -30,7 +27,4 @@ export const StyledTextField = styled(MuiTextField, {
     })
 }));
 
-export const StyledFormControl = styled(MuiFormControl)({});
-export const StyledFormHelperText = styled(MuiFormHelperText)({});
-export const StyledOutlinedInput = styled(MuiOutlinedInput)({});
 export const StyledFilledInput = styled(MuiFilledInput)({});
