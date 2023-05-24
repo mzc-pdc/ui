@@ -1,8 +1,8 @@
 import React, {FC} from "react";
-import {FormControlProps} from "@mui/material";
+import {FilledInputProps} from "@mui/material";
 import {StyledFilledInput} from "./styled";
 
-export const FilledInput: FC<FormControlProps> = (props, {
+export const FilledInput: FC<FilledInputProps> = (props, {
     ...restProps
 }) => {
     return (

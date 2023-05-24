@@ -4,29 +4,8 @@ export const TextFieldTheme = (theme: any): Components["MuiTextField"] => (
     {
         defaultProps: {},
         styleOverrides: {
-            root: {
-                ".MuiFormLabel-root": {
-                    transform: `translate(14px, 11px) scale(1)`,
-                    "&.MuiInputLabel-shrink": {
-                        transform: `translate(14px, -9px) scale(0.75)`
-                    }
-                }
-            }
         },
         variants: [
-            {
-                props: {
-                    size: "small"
-                },
-                style: {
-                    ".MuiFormLabel-root": {
-                        transform: `translate(8px, 6px) scale(1)`,
-                        "&.MuiInputLabel-shrink": {
-                            transform: `translate(14px, -9px) scale(0.75)`
-                        }
-                    }
-                }
-            },
             {
                 props: { multiline: true },
                 style: {

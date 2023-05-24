@@ -19,3 +19,5 @@ export * from './table-head';
 export * from './table-pagination';
 export * from './table-row';
 export * from './table-sort-label';
+export * from './input-label';
+export * from './select';

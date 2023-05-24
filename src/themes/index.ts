@@ -21,6 +21,8 @@ import {
   TableRowTheme,
   TableSortLabelTheme,
   TableTheme,
+  InputLabelTheme,
+  SelectTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -56,12 +58,8 @@ export const defaultTheme: ThemeOptions = {
 export const overrideTheme = {
   ...defaultTheme,
   components: {
-    MuiButton: {
-      ...ButtonTheme(defaultTheme),
-    },
-    MuiIconButton: {
-      ...IconButtonTheme(defaultTheme),
-    },
+    MuiButton: { ...ButtonTheme(defaultTheme) },
+    MuiIconButton: { ...IconButtonTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
     MuiFilledInput: { ...FilledInputTheme(defaultTheme) },
@@ -70,6 +68,8 @@ export const overrideTheme = {
     MuiFormGroup: { ...FormGroupTheme(defaultTheme) },
     MuiFormControlLabel: { ...FormControlLabelTheme(defaultTheme) },
     MuiFormHelperText: { ...FormHelperTextTheme(defaultTheme) },
+    MuiInputLabel: { ...InputLabelTheme(defaultTheme) },
+    MuiSelect: { ...SelectTheme(defaultTheme) },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
