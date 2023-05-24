@@ -10,3 +10,5 @@ export * from './form-helper-text';
 export * from './form-label';
 export * from './outlined-input';
 export * from './filled-input';
+export * from './input-label';
+export * from './select';
