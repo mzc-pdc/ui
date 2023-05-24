@@ -1,7 +1,14 @@
 import { createTheme, ThemeOptions } from '@mui/material/styles';
 import { typography } from './typography';
 import { palette } from './palette';
-import { ButtonTheme, IconButtonTheme } from '../components';
+import {
+  ButtonTheme,
+  IconButtonTheme,
+  TableBodyTheme,
+  TableCellTheme,
+  TableContainerTheme, TableFooterTheme, TableHeadTheme, TablePaginationTheme, TableRowTheme, TableSortLabelTheme,
+  TableTheme
+} from '../components';
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {
@@ -106,6 +113,33 @@ export const overrideTheme = {
     },
     MuiButton: {
       ...ButtonTheme(defaultTheme),
+    },
+    MuiTable: {
+      ...TableTheme(defaultTheme)
+    },
+    MuiTableBody: {
+      ...TableBodyTheme(defaultTheme)
+    },
+    MuiTableCell: {
+      ...TableCellTheme(defaultTheme)
+    },
+    MuiTableContainer: {
+      ...TableContainerTheme(defaultTheme)
+    },
+    MuiTableFooter: {
+      ...TableFooterTheme(defaultTheme)
+    },
+    MuiTableHead: {
+      ...TableHeadTheme(defaultTheme)
+    },
+    MuiTablePagination: {
+      ...TablePaginationTheme(defaultTheme)
+    },
+    MuiTableRow: {
+      ...TableRowTheme(defaultTheme)
+    },
+    MuiTableSortLabel: {
+      ...TableSortLabelTheme(defaultTheme)
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
