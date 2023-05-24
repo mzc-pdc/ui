@@ -1,8 +1,8 @@
 import React, {FC} from "react";
-import {FormControlProps} from "@mui/material";
+import {OutlinedInputProps} from "@mui/material";
 import {StyledOutlinedInput} from "./styled";
 
-export const OutlinedInput: FC<FormControlProps> = (props, {
+export const OutlinedInput: FC<OutlinedInputProps> = (props, {
     ...restProps
 }) => {
     return (
