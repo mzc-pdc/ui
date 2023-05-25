@@ -27,6 +27,14 @@ import {
   MenuTheme,
   MenuItemTheme,
   MenuListTheme,
+  ListTheme,
+  ListItemTheme,
+  ListItemTextTheme,
+  ListSubheaderTheme,
+  ListItemAvatarTheme,
+  ListItemSecondaryActionTheme,
+  ListItemIconTheme,
+  ListItemButtonTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -80,6 +88,16 @@ export const overrideTheme = {
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
+    MuiList: { ...ListTheme(defaultTheme) },
+    MuiListItem: { ...ListItemTheme(defaultTheme) },
+    MuiListItemAvatar: { ...ListItemAvatarTheme(defaultTheme) },
+    MuiListItemButton: { ...ListItemButtonTheme(defaultTheme) },
+    MuiListItemIcon: { ...ListItemIconTheme(defaultTheme) },
+    MuiListItemSecondaryAction: {
+      ...ListItemSecondaryActionTheme(defaultTheme),
+    },
+    MuiListItemText: { ...ListItemTextTheme(defaultTheme) },
+    MuiListSubheader: { ...ListSubheaderTheme(defaultTheme) },
     MuiTable: {
       ...TableTheme(defaultTheme),
     },
@@ -109,9 +127,13 @@ export const overrideTheme = {
     },
     MuiAutocomplete: {
       ...AutocompleteTheme(defaultTheme),
+      MuiCssBaseline: {
+        styleOverrides: () => ({}),
+      },
     },
   },
 };
+
 // Create a theme instance.
 export const theme = createTheme(overrideTheme);
 
