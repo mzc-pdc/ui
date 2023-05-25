@@ -1,8 +1,10 @@
 import * as React from 'react';
 import {FC} from 'react';
-import {StyledCheckbox, StyledCheckboxProps} from "./styled";
+import {StyledCheckbox} from "./styled";
+import {CheckboxProps} from "./types";
 
-export const Checkbox: FC<StyledCheckboxProps> = (props,{
+
+export const Checkbox: FC<CheckboxProps> = (props,{
     ...restProps
 }) => {
     return (
