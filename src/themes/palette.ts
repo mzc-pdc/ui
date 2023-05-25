@@ -16,6 +16,7 @@ declare module '@mui/material/styles' {
         yellow: Color & PaletteColor;
         orange: Color & PaletteColor;
         indigo: Color & PaletteColor;
+        white: Color & PaletteColor;
         logo: {
             [key: string]: string;
         };
@@ -33,6 +34,7 @@ declare module '@mui/material/styles' {
         yellow: PaletteColorOptions;
         orange: PaletteColorOptions;
         indigo: PaletteColorOptions;
+        white: PaletteColorOptions;
         logo: {
             [key: string]: string;
         };
@@ -73,6 +75,11 @@ export const palette: PaletteOptions = {
         black: "#000000",
         white: "#FFFFFF"
     },
+    white: {
+        main: '#fff',
+        light: '#fff',
+        dark: '#fff',
+    },
     default: {
         900: "#000000",
         800: "#303637",
@@ -85,6 +92,7 @@ export const palette: PaletteOptions = {
         100: "#f1f4f6",
         50: "#f6f8f9",
         main: "#c3cbd4",
+        light: "",
         contrastText: "#ffffff"
     },
     primary: {
@@ -214,6 +222,26 @@ export const palette: PaletteOptions = {
         main: "#ef4116",
         light: "#ff4f20",
         dark: "#c82b06",
+        contrastText: "#ffffff"
+    },
+    info: {
+        A700: "#2E2E31",
+        A400: "#87878F",
+        A200: "#BEC0C9",
+        A100: "#D1D2D9",
+        900: "#0011c0",
+        800: "#0022d9",
+        700: "#002fe3",
+        600: "#003bf0",
+        500: "#0144fc",
+        400: "#2763EA",
+        300: "#6280ff",
+        200: "#96a4fe",
+        100: "#c2c8fe",
+        50: "#e7e9ff",
+        main: "#2763EA",
+        light: "#6280ff",
+        dark: "#0011c0",
         contrastText: "#ffffff"
     },
     black: {
