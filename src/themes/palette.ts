@@ -131,7 +131,7 @@ export const palette: PaletteOptions = {
         A700: "#565960",
         A400: "#9DA2AA",
         A200: "#D9DDE3",
-        A100: "#E6E9EF",
+        A100: "#c9d4f4",
         900: "#171717",
         800: "#373737",
         700: "#555555",

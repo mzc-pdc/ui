@@ -21,3 +21,6 @@ export * from './table-row';
 export * from './table-sort-label';
 export * from './input-label';
 export * from './select';
+export * from './menu';
+export * from './menu-item';
+export * from './menu-list';
