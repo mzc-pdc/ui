@@ -21,3 +21,5 @@ export * from './table-row';
 export * from './table-sort-label';
 export * from './input-label';
 export * from './select';
+export * from './radio';
+export * from './radio-group';
