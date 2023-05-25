@@ -23,6 +23,14 @@ import {
   TableTheme,
   InputLabelTheme,
   SelectTheme,
+  ListTheme,
+  ListItemTheme,
+  ListItemTextTheme,
+  ListSubheaderTheme,
+  ListItemAvatarTheme,
+  ListItemSecondaryActionTheme,
+  ListItemIconTheme,
+  ListItemButtonTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -70,28 +78,14 @@ export const overrideTheme = {
     MuiFormHelperText: { ...FormHelperTextTheme(defaultTheme) },
     MuiInputLabel: { ...InputLabelTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },
-    MuiCssBaseline: {
-      styleOverrides: () => ({}),
-    },
-    MuiMenuItem: {
-      styleOverrides: {
-        root: {
-          padding: `12px 16px`,
-          borderRadius: 6,
-          '&:hover': {
-            backgroundColor: `#f5f5f5`,
-            '&.active': {
-              backgroundColor: `transparent`,
-            },
-          },
-          '.icon': {
-            width: 24,
-            height: 24,
-            marginRight: 16,
-          },
-        },
-      },
-    },
+    MuiList: {...ListTheme(defaultTheme)},
+    MuiListItem: {...ListItemTheme(defaultTheme)},
+    MuiListItemAvatar: {...ListItemAvatarTheme(defaultTheme)},
+    MuiListItemButton: {...ListItemButtonTheme(defaultTheme)},
+    MuiListItemIcon: {...ListItemIconTheme(defaultTheme)},
+    MuiListItemSecondaryAction: {...ListItemSecondaryActionTheme(defaultTheme)},
+    MuiListItemText: {...ListItemTextTheme(defaultTheme)},
+    MuiListSubheader: {...ListSubheaderTheme(defaultTheme)},
     MuiTable: {
       ...TableTheme(defaultTheme),
     },
@@ -118,6 +112,9 @@ export const overrideTheme = {
     },
     MuiTableSortLabel: {
       ...TableSortLabelTheme(defaultTheme),
+    },
+    MuiCssBaseline: {
+      styleOverrides: () => ({}),
     },
   },
 };
