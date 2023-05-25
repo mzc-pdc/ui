@@ -24,6 +24,9 @@ import {
   InputLabelTheme,
   SelectTheme,
   AutocompleteTheme,
+  MenuTheme,
+  MenuItemTheme,
+  MenuListTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -71,27 +74,11 @@ export const overrideTheme = {
     MuiFormHelperText: { ...FormHelperTextTheme(defaultTheme) },
     MuiInputLabel: { ...InputLabelTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },
+    MuiMenu: { ...MenuTheme(defaultTheme) },
+    MuiMenuItem: { ...MenuItemTheme(defaultTheme) },
+    MuiMenuList: { ...MenuListTheme(defaultTheme) },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
-    },
-    MuiMenuItem: {
-      styleOverrides: {
-        root: {
-          padding: `12px 16px`,
-          borderRadius: 6,
-          '&:hover': {
-            backgroundColor: `#f5f5f5`,
-            '&.active': {
-              backgroundColor: `transparent`,
-            },
-          },
-          '.icon': {
-            width: 24,
-            height: 24,
-            marginRight: 16,
-          },
-        },
-      },
     },
     MuiTable: {
       ...TableTheme(defaultTheme),
@@ -121,8 +108,8 @@ export const overrideTheme = {
       ...TableSortLabelTheme(defaultTheme),
     },
     MuiAutocomplete: {
-      ...AutocompleteTheme(defaultTheme)
-    }
+      ...AutocompleteTheme(defaultTheme),
+    },
   },
 };
 // Create a theme instance.

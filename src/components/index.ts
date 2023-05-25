@@ -22,3 +22,6 @@ export * from './table-sort-label';
 export * from './input-label';
 export * from './select';
 export * from './autocomplete';
+export * from './menu';
+export * from './menu-item';
+export * from './menu-list';
