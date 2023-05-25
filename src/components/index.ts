@@ -35,3 +35,4 @@ export * from './list-item-text';
 export * from './list-subheader';
 export * from './radio';
 export * from './radio-group';
+export * from './checkbox';

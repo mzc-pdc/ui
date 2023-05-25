@@ -22,7 +22,6 @@ import {
   TableSortLabelTheme,
   TableTheme,
   InputLabelTheme,
-  SelectTheme,
   AutocompleteTheme,
   MenuTheme,
   MenuItemTheme,
@@ -37,6 +36,8 @@ import {
   ListItemButtonTheme,
   RadioTheme,
   RadioGroupTheme,
+  SelectTheme,
+  CheckboxTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -76,6 +77,7 @@ export const overrideTheme = {
     MuiIconButton: { ...IconButtonTheme(defaultTheme) },
     MuiRadio: { ...RadioTheme(defaultTheme) },
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
+    MuiCheckbox: { ...CheckboxTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
     MuiFilledInput: { ...FilledInputTheme(defaultTheme) },
@@ -89,9 +91,6 @@ export const overrideTheme = {
     MuiMenu: { ...MenuTheme(defaultTheme) },
     MuiMenuItem: { ...MenuItemTheme(defaultTheme) },
     MuiMenuList: { ...MenuListTheme(defaultTheme) },
-    MuiCssBaseline: {
-      styleOverrides: () => ({}),
-    },
     MuiList: { ...ListTheme(defaultTheme) },
     MuiListItem: { ...ListItemTheme(defaultTheme) },
     MuiListItemAvatar: { ...ListItemAvatarTheme(defaultTheme) },
@@ -131,9 +130,9 @@ export const overrideTheme = {
     },
     MuiAutocomplete: {
       ...AutocompleteTheme(defaultTheme),
-      MuiCssBaseline: {
-        styleOverrides: () => ({}),
-      },
+    },
+    MuiCssBaseline: {
+      styleOverrides: () => ({}),
     },
   },
 };
