@@ -42,27 +42,81 @@ export const Color: ComponentStory<typeof List> = () => {
         <Box>
             <Grid container>
                 <Grid item sx={{padding: 3, backgroundColor: theme.palette.secondary.main}}>
-                    <Checkbox color={'white'}/>
+                    <Checkbox color={'white'} checked/>
                 </Grid>
-                <Checkbox color={'primary'}/>
-                <Checkbox color={'secondary'}/>
-                <Checkbox color={'error'}/>
-                <Checkbox color={'info'}/>
-                <Checkbox color={'success'}/>
-                <Checkbox color={'warning'}/>
-                <Checkbox color={'default'}/>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'primary'} checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'secondary'} checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'error'} checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'info'} checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'success'} checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'warning'} checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'default'} checked/>
+                </Grid>
             </Grid>
             <Grid container>
                 <Grid item sx={{padding: 3, backgroundColor: theme.palette.secondary.main}}>
                     <Checkbox color={'white'} disabled/>
                 </Grid>
-                <Checkbox color={'primary'} disabled/>
-                <Checkbox color={'secondary'} disabled/>
-                <Checkbox color={'error'} disabled/>
-                <Checkbox color={'info'} disabled/>
-                <Checkbox color={'success'} disabled/>
-                <Checkbox color={'warning'} disabled/>
-                <Checkbox color={'default'} disabled/>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'primary'} disabled/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'secondary'} disabled/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'error'} disabled/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'info'} disabled/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'success'} disabled/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'warning'} disabled/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'default'} disabled/>
+                </Grid>
+            </Grid>
+            <Grid container>
+                <Grid item sx={{padding: 3, backgroundColor: theme.palette.secondary.main}}>
+                    <Checkbox color={'white'} disabled checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'primary'} disabled checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'secondary'} disabled checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'error'} disabled checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'info'} disabled checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'success'} disabled checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'warning'} disabled checked/>
+                </Grid>
+                <Grid item sx={{padding: 3}}>
+                    <Checkbox color={'default'} disabled checked/>
+                </Grid>
             </Grid>
         </Box>
     )
