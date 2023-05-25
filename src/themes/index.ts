@@ -23,6 +23,7 @@ import {
   TableTheme,
   InputLabelTheme,
   SelectTheme,
+  AutocompleteTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -119,6 +120,9 @@ export const overrideTheme = {
     MuiTableSortLabel: {
       ...TableSortLabelTheme(defaultTheme),
     },
+    MuiAutocomplete: {
+      ...AutocompleteTheme(defaultTheme)
+    }
   },
 };
 // Create a theme instance.
