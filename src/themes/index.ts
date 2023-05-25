@@ -35,6 +35,8 @@ import {
   ListItemSecondaryActionTheme,
   ListItemIconTheme,
   ListItemButtonTheme,
+  RadioTheme,
+  RadioGroupTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -72,6 +74,8 @@ export const overrideTheme = {
   components: {
     MuiButton: { ...ButtonTheme(defaultTheme) },
     MuiIconButton: { ...IconButtonTheme(defaultTheme) },
+    MuiRadio: { ...RadioTheme(defaultTheme) },
+    MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
     MuiFilledInput: { ...FilledInputTheme(defaultTheme) },
