@@ -4,11 +4,12 @@ import React from "react";
 import ErrorIcon from '@mui/icons-material/Error';
 import SearchIcon from '@mui/icons-material/Search';
 import TuneIcon from '@mui/icons-material/Tune';
-import {Grid, Box, Stack, InputAdornment} from "@mui/material";
+import {Grid, Box, Stack} from "@mui/material";
 import {TextField} from './text-field';
 import {IconButton} from "../icon-button";
 import {FormHelperText} from "../form-helper-text";
 import {FormControl} from "../form-control";
+import {InputAdornment} from "../input-adornment";
 
 const meta:Meta<typeof TextField> = {
     title: 'Components/TextField',
