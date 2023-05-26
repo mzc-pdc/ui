@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { ChipProps } from '@mui/material';
+import { ChipProps } from './types';
 
 import { StyledChip } from './styled';
 

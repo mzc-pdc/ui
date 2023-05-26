@@ -37,7 +37,7 @@ import {
   RadioTheme,
   RadioGroupTheme,
   SelectTheme,
-  CheckboxTheme,
+  CheckboxTheme, ChipTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -78,6 +78,7 @@ export const overrideTheme = {
     MuiRadio: { ...RadioTheme(defaultTheme) },
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
     MuiCheckbox: { ...CheckboxTheme(defaultTheme) },
+    MuiChip: { ...ChipTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
     MuiFilledInput: { ...FilledInputTheme(defaultTheme) },
