@@ -5,6 +5,7 @@ import {
   TableBodyTheme,
   TableCellTheme,
   ButtonTheme,
+  ButtonGroupTheme,
   IconButtonTheme,
   FilledInputTheme,
   OutlinedInputTheme,
@@ -71,6 +72,7 @@ export const overrideTheme = {
   ...defaultTheme,
   components: {
     MuiButton: { ...ButtonTheme(defaultTheme) },
+    MuiButtonGroup: {...ButtonGroupTheme(defaultTheme)},
     MuiIconButton: { ...IconButtonTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
