@@ -1,23 +1,17 @@
 import React, { FC } from 'react';
-import { IAppBarProps } from './types';
+import { AppBarProps } from './types';
 
 import { StyledAppBar } from './styled';
 
-export const AppBar: FC<IAppBarProps> = ({
-  children,
-  position,
-  color,
-  htmlColor,
+export const AppBar: FC<AppBarProps> = (props, {
   ...restProps
 }) => {
   return (
     <StyledAppBar
+      {...props}
       {...restProps}
-      color={color}
-      htmlColor={htmlColor}
-      position={position}
     >
-      {children}
+      {props.children}
     </StyledAppBar>
   );
 };
