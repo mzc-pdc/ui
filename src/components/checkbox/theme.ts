@@ -36,13 +36,26 @@ export const CheckboxTheme = (theme: any): Components["MuiCheckbox"] => (
                         ...(ownerState.disabled && {
                             borderColor: alpha(theme.palette.secondary.light, 0.16)
                         }),
+                        ...(ownerState.color && ownerState.color !== `white` && {
+                            borderColor: theme.palette[ownerState.color].light,
+                            backgroundColor: theme.palette.common.white,
+                            ...(ownerState.disabled && {
+                                borderColor: alpha(theme.palette[ownerState.color].main, 0.16)
+                            })
+                        }),
                         ...(ownerState.color === `default` && {
                             borderColor: theme.palette.secondary.light,
                             backgroundColor: theme.palette.common.white,
                             ...(ownerState.disabled && {
                                 borderColor: alpha(theme.palette.secondary.main, 0.16)
                             })
-                        })
+                        }),
+                        ...(ownerState.color === `white` && {
+                            borderColor: alpha(theme.palette.common.white, 0.6),
+                            ...(ownerState.disabled && {
+                                borderColor: alpha(theme.palette.secondary.light, 0.16)
+                            }),
+                        }),
                     },
                     "&:after": {
                         content: '""',
@@ -64,12 +77,18 @@ export const CheckboxTheme = (theme: any): Components["MuiCheckbox"] => (
                         ...(ownerState.disabled && {
                             borderColor: alpha(theme.palette.common.white, 0.48)
                         }),
+                        ...(ownerState.color && ownerState.color !== `white` && {
+                            borderColor: theme.palette[ownerState.color].main,
+                            ...(ownerState.disabled && {
+                                borderColor: alpha(theme.palette[ownerState.color].main, 0.48)
+                            })
+                        }),
                         ...(ownerState.color === `default` && {
                             borderColor: theme.palette.secondary.main,
                             ...(ownerState.disabled && {
                                 borderColor: alpha(theme.palette.secondary.main, 0.48)
                             })
-                        })
+                        }),
                     },
                     "&.MuiCheckbox-indeterminate": {
                         "&:after": {
