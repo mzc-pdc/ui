@@ -5,7 +5,7 @@ export const RadioTheme = (theme: any): Components["MuiRadio"] => (
     {
         defaultProps: {},
         styleOverrides: {
-            root: ({ ownerState }) => ({
+            root: ({ownerState}) => ({
                 padding: 8,
                 input: {
                     "+ span": {
@@ -43,9 +43,9 @@ export const RadioTheme = (theme: any): Components["MuiRadio"] => (
                 "&.Mui-disabled": {
                     input: {
                         "+ span": {
-                            borderColor: alpha(theme.palette.secondary.main, 0.16),
+                            borderColor: ownerState.color && ownerState.color === 'white' ? alpha(theme.palette.white.main, 0.16) : alpha(theme.palette.secondary.main, 0.16),
                             "&:before": {
-                                backgroundColor: alpha(
+                                backgroundColor: ownerState.color && ownerState.color === 'white' ? alpha(theme.palette.white.main, 0.48) : alpha(
                                     theme.palette.secondary.main,
                                     0.48
                                 )
