@@ -37,7 +37,10 @@ import {
   RadioTheme,
   RadioGroupTheme,
   SelectTheme,
-  CheckboxTheme, ChipTheme,
+  CheckboxTheme,
+  ChipTheme,
+  AlertTheme,
+  AlertTitleTheme
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -131,6 +134,12 @@ export const overrideTheme = {
     },
     MuiAutocomplete: {
       ...AutocompleteTheme(defaultTheme),
+    },
+    MuiAlert: {
+      ...AlertTheme(defaultTheme)
+    },
+    MuiAlertTitle: {
+      ...AlertTitleTheme(defaultTheme)
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
