@@ -58,3 +58,4 @@ export * from './card-media';
 export * from './card-header';
 export * from './circular-progress';
 export * from './linear-progress';
+export * from './collapse';

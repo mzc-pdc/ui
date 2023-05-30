@@ -59,6 +59,7 @@ import {
   TableSortLabelTheme,
   CircularProgressTheme,
   LinearProgressTheme,
+  CollapseTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -210,6 +211,9 @@ export const overrideTheme = {
     },
     MuiLinearProgress: {
       ...LinearProgressTheme(defaultTheme),
+    },
+    MuiCollapse: {
+      ...CollapseTheme(defaultTheme),
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
