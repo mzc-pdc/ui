@@ -45,3 +45,4 @@ export * from './app-bar';
 export * from './avatar';
 export * from './avatar-group';
 export * from './backdrop';
+export * from './badge';

@@ -47,6 +47,7 @@ import {
   AvatarTheme,
   AvatarGroupTheme,
   BackdropTheme,
+  BadgeTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -144,6 +145,9 @@ export const overrideTheme = {
     },
     MuiAccordion: {
       ...AccordionTheme(defaultTheme),
+    },
+    MuiBadge: {
+      ...BadgeTheme(defaultTheme),
     },
     MuiAlert: {
       ...AlertTheme(defaultTheme),
