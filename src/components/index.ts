@@ -39,3 +39,5 @@ export * from './radio-group';
 export * from './checkbox';
 export * from './switch';
 export * from './accordion';
+export * from './alert';
+export * from './alert-title';

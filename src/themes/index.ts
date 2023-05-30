@@ -41,6 +41,8 @@ import {
   ChipTheme,
   AccordionTheme,
   ButtonGroupTheme,
+  AlertTheme,
+  AlertTitleTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -138,6 +140,12 @@ export const overrideTheme = {
     },
     MuiAccordion: {
       ...AccordionTheme(defaultTheme),
+    },
+    MuiAlert: {
+      ...AlertTheme(defaultTheme),
+    },
+    MuiAlertTitle: {
+      ...AlertTitleTheme(defaultTheme),
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
