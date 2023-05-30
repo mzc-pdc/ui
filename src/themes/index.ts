@@ -46,6 +46,7 @@ import {
   AppBarTheme,
   AvatarTheme,
   AvatarGroupTheme,
+  BackdropTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -158,6 +159,9 @@ export const overrideTheme = {
     },
     MuiAvatarGroup: {
       ...AvatarGroupTheme(defaultTheme),
+    },
+    MuiBackdrop: {
+      ...BackdropTheme(defaultTheme),
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),

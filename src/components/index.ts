@@ -44,3 +44,4 @@ export * from './alert-title';
 export * from './app-bar';
 export * from './avatar';
 export * from './avatar-group';
+export * from './backdrop';
