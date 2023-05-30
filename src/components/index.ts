@@ -60,3 +60,4 @@ export * from './circular-progress';
 export * from './linear-progress';
 export * from './collapse';
 export * from './container';
+export * from './divider';
