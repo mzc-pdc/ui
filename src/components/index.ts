@@ -46,3 +46,5 @@ export * from './avatar';
 export * from './avatar-group';
 export * from './backdrop';
 export * from './badge';
+export * from './bottom-navigation';
+export * from './bottom-navigation-action';

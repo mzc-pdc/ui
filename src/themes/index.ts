@@ -48,6 +48,8 @@ import {
   AvatarGroupTheme,
   BackdropTheme,
   BadgeTheme,
+  BottomNavigationTheme,
+  BottomNavigationActionTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -145,6 +147,12 @@ export const overrideTheme = {
     },
     MuiAccordion: {
       ...AccordionTheme(defaultTheme),
+    },
+    MuiBottomNavigation: {
+      ...BottomNavigationTheme(defaultTheme),
+    },
+    MuiBottomNavigationAction: {
+      ...BottomNavigationActionTheme(defaultTheme),
     },
     MuiBadge: {
       ...BadgeTheme(defaultTheme),
