@@ -50,3 +50,8 @@ export * from './bottom-navigation';
 export * from './bottom-navigation-action';
 export * from './box';
 export * from './breadcrumbs';
+export * from './dialog';
+export * from './dialog-actions';
+export * from './dialog-content';
+export * from './dialog-content-text';
+export * from './dialog-title';

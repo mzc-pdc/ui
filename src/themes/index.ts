@@ -50,7 +50,7 @@ import {
   BadgeTheme,
   BottomNavigationTheme,
   BottomNavigationActionTheme,
-  BreadcrumbsTheme,
+  BreadcrumbsTheme, DialogTheme, DialogActionsTheme, DialogContentTheme, DialogContentTextTheme, DialogTitleTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -178,6 +178,21 @@ export const overrideTheme = {
     },
     MuiBackdrop: {
       ...BackdropTheme(defaultTheme),
+    },
+    MuiDialog: {
+      ...DialogTheme(defaultTheme)
+    },
+    MuiDialogActions: {
+      ...DialogActionsTheme(defaultTheme)
+    },
+    MuiDialogContent: {
+      ...DialogContentTheme(defaultTheme)
+    },
+    MuiDialogContentText: {
+      ...DialogContentTextTheme(defaultTheme)
+    },
+    MuiDialogTitle: {
+      ...DialogTitleTheme(defaultTheme)
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
