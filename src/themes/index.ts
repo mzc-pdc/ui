@@ -50,6 +50,7 @@ import {
   BadgeTheme,
   BottomNavigationTheme,
   BottomNavigationActionTheme,
+  BreadcrumbsTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -147,6 +148,9 @@ export const overrideTheme = {
     },
     MuiAccordion: {
       ...AccordionTheme(defaultTheme),
+    },
+    MuiBreadcrumbs: {
+      ...BreadcrumbsTheme(defaultTheme),
     },
     MuiBottomNavigation: {
       ...BottomNavigationTheme(defaultTheme),

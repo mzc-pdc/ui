@@ -49,3 +49,4 @@ export * from './badge';
 export * from './bottom-navigation';
 export * from './bottom-navigation-action';
 export * from './box';
+export * from './breadcrumbs';
