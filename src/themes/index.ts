@@ -60,6 +60,7 @@ import {
   CircularProgressTheme,
   LinearProgressTheme,
   CollapseTheme,
+  ContainerTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -214,6 +215,9 @@ export const overrideTheme = {
     },
     MuiCollapse: {
       ...CollapseTheme(defaultTheme),
+    },
+    MuiContainer: {
+      ...ContainerTheme(defaultTheme),
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
