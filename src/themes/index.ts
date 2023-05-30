@@ -50,7 +50,7 @@ import {
   BadgeTheme,
   BottomNavigationTheme,
   BottomNavigationActionTheme,
-  BreadcrumbsTheme,
+  BreadcrumbsTheme, CollapseTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -178,6 +178,9 @@ export const overrideTheme = {
     },
     MuiBackdrop: {
       ...BackdropTheme(defaultTheme),
+    },
+    MuiCollapse: {
+      ...CollapseTheme(defaultTheme)
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
