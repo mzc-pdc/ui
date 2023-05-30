@@ -335,7 +335,7 @@ export const palette: PaletteOptions = {
     },
     text: {
         primary: "#3c3d4f",
-        secondary: "#55595E",
+        secondary: "#6f6f83",
         disabled: "#B1B5BA"
     },
     divider: "#dfdfee",

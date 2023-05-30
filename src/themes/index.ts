@@ -37,7 +37,7 @@ import {
     RadioTheme,
     RadioGroupTheme,
     SelectTheme,
-    CheckboxTheme, ChipTheme, AccordionTheme,
+    CheckboxTheme, ChipTheme, AccordionTheme, BreadcrumbsTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -134,6 +134,9 @@ export const overrideTheme = {
         },
         MuiAccordion: {
             ...AccordionTheme(defaultTheme),
+        },
+        MuiBreadcrumbs: {
+            ...BreadcrumbsTheme(defaultTheme)
         },
         MuiCssBaseline: {
             styleOverrides: () => ({}),
