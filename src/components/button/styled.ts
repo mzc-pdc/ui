@@ -1,6 +1,7 @@
-import {Button as MuiButton, CircularProgress} from '@mui/material';
+import {Button as MuiButton} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ButtonProps } from './types';
+import {CircularProgress} from '../circular-progress';
 
 export const Children = styled('span')``;
 

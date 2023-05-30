@@ -50,7 +50,7 @@ import {
   BadgeTheme,
   BottomNavigationTheme,
   BottomNavigationActionTheme,
-  BreadcrumbsTheme,
+  BreadcrumbsTheme, CircularProgressTheme, LinearProgressTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -178,6 +178,12 @@ export const overrideTheme = {
     },
     MuiBackdrop: {
       ...BackdropTheme(defaultTheme),
+    },
+    MuiCircularProgress: {
+      ...CircularProgressTheme(defaultTheme),
+    },
+    MuiLinearProgress: {
+      ...LinearProgressTheme(defaultTheme),
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
