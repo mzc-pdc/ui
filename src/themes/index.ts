@@ -37,7 +37,7 @@ import {
     RadioTheme,
     RadioGroupTheme,
     SelectTheme,
-    CheckboxTheme, ChipTheme, AccordionTheme,
+    CheckboxTheme, ChipTheme, AccordionTheme, BottomNavigationTheme, BottomNavigationActionTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -134,6 +134,12 @@ export const overrideTheme = {
         },
         MuiAccordion: {
             ...AccordionTheme(defaultTheme),
+        },
+        MuiBottomNavigation: {
+            ...BottomNavigationTheme(defaultTheme)
+        },
+        MuiBottomNavigationAction: {
+            ...BottomNavigationActionTheme(defaultTheme)
         },
         MuiCssBaseline: {
             styleOverrides: () => ({}),

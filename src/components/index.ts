@@ -38,3 +38,5 @@ export * from './radio-group';
 export * from './checkbox';
 export * from './switch';
 export * from './accordion';
+export * from './bottom-navigation';
+export * from './bottom-navigation-action';
