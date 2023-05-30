@@ -38,6 +38,8 @@ import {
   RadioGroupTheme,
   SelectTheme,
   CheckboxTheme, ChipTheme,
+  AvatarTheme,
+  AvatarGroupTheme
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -131,6 +133,12 @@ export const overrideTheme = {
     },
     MuiAutocomplete: {
       ...AutocompleteTheme(defaultTheme),
+    },
+    MuiAvatar: {
+      ...AvatarTheme(defaultTheme)
+    },
+    MuiAvatarGroup: {
+      ...AvatarGroupTheme(defaultTheme)
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
