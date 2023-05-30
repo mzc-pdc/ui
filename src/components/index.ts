@@ -41,3 +41,4 @@ export * from './switch';
 export * from './accordion';
 export * from './alert';
 export * from './alert-title';
+export * from './app-bar';

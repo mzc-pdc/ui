@@ -1,5 +1,6 @@
-import { AppBarProps } from '@mui/material';
+import { AppBarProps as MuiAppBarProps } from '@mui/material';
 
-export type IAppBarProps = {
+export interface AppBarProps extends MuiAppBarProps {
+  // additional prop keys that do not exist in MuiThemeProps
   htmlColor?: string | undefined;
-} & AppBarProps;
+}
