@@ -44,6 +44,8 @@ import {
   CheckboxTheme,
   ChipTheme,
   AppBarTheme,
+  AvatarTheme,
+  AvatarGroupTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -150,6 +152,12 @@ export const overrideTheme = {
     },
     MuiAppBar: {
       ...AppBarTheme(defaultTheme),
+    },
+    MuiAvatar: {
+      ...AvatarTheme(defaultTheme),
+    },
+    MuiAvatarGroup: {
+      ...AvatarGroupTheme(defaultTheme),
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
