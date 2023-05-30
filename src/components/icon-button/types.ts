@@ -1,14 +1,5 @@
 import { IconButtonProps as MuIconButtonProps } from '@mui/material/IconButton/IconButton';
 
-declare module '@mui/material/CircularProgress' {
-  export interface CircularProgressPropsColorOverrides {
-    inherit:true;
-    grayscale: true;
-    grayscaleSecondary: true;
-    default: true;
-  }
-}
-
 declare module '@mui/material/IconButton' {
   export interface IconButtonPropsColorOverrides {
     grayscale: true;

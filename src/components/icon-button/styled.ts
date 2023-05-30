@@ -1,7 +1,8 @@
-import {CircularProgress, IconButton as MuiIconButton} from '@mui/material';
+import {IconButton as MuiIconButton} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import {alpha} from "@mui/system";
 import { IconButtonProps } from './types';
+import {CircularProgress} from '../circular-progress';
 
 export const Children = styled('span')``;
 

@@ -57,6 +57,8 @@ import {
   TablePaginationTheme,
   TableRowTheme,
   TableSortLabelTheme,
+  CircularProgressTheme,
+  LinearProgressTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -189,19 +191,25 @@ export const overrideTheme = {
       ...CardTheme(defaultTheme),
     },
     MuiCardActionArea: {
-      ...CardActionAreaTheme(defaultTheme)
+      ...CardActionAreaTheme(defaultTheme),
     },
     MuiCardActions: {
-      ...CardActionsTheme(defaultTheme)
+      ...CardActionsTheme(defaultTheme),
     },
     MuiCardContent: {
-      ...CardContentTheme(defaultTheme)
+      ...CardContentTheme(defaultTheme),
     },
     MuiCardHeader: {
-      ...CardHeaderTheme(defaultTheme)
+      ...CardHeaderTheme(defaultTheme),
     },
     MuiCardMedia: {
-      ...CardMediaTheme(defaultTheme)
+      ...CardMediaTheme(defaultTheme),
+    },
+    MuiCircularProgress: {
+      ...CircularProgressTheme(defaultTheme),
+    },
+    MuiLinearProgress: {
+      ...LinearProgressTheme(defaultTheme),
     },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
