@@ -61,3 +61,8 @@ export * from './linear-progress';
 export * from './collapse';
 export * from './container';
 export * from './divider';
+export * from './dialog';
+export * from './dialog-actions';
+export * from './dialog-content';
+export * from './dialog-content-text';
+export * from './dialog-title';
