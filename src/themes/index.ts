@@ -75,7 +75,7 @@ import {
     DialogContentTheme,
     DialogContentTextTheme,
     DialogTitleTheme,
-    ToolbarTheme
+    ToolbarTheme, PaginationTheme, PaginationItemTheme
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -170,6 +170,8 @@ export const overrideTheme = {
         MuiMenuItem: {...MenuItemTheme(defaultTheme)},
         MuiMenuList: {...MenuListTheme(defaultTheme)},
         MuiOutlinedInput: {...OutlinedInputTheme(defaultTheme)},
+        MuiPagination: {...PaginationTheme(defaultTheme)},
+        MuiPaginationItem: {...PaginationItemTheme(defaultTheme)},
         MuiRadio: {...RadioTheme(defaultTheme)},
         MuiRadioGroup: {...RadioGroupTheme(defaultTheme)},
         MuiSelect: {...SelectTheme(defaultTheme)},
