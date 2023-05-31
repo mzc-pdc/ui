@@ -90,6 +90,7 @@ import {
   PaperTheme,
   PopperTheme,
   PopoverTheme,
+  RatingTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -202,6 +203,7 @@ export const overrideTheme = {
     MuiPopper: { ...PopperTheme(defaultTheme) },
     MuiRadio: { ...RadioTheme(defaultTheme) },
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
+    MuiRating: { ...RatingTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },
     MuiSwitch: { ...SwitchTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
