@@ -35,6 +35,7 @@ export * from './dialog-content-text';
 export * from './dialog-panel';
 export * from './dialog-title';
 export * from './divider';
+export * from './drawer';
 export * from './filled-input';
 export * from './form-control';
 export * from './form-control-label';
