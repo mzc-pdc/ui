@@ -18,6 +18,36 @@ export const AlertTheme = (theme: any): Components["MuiAlert"]=> (
                 })
             })
         },
+        variants: [
+            {
+                props: {variant: 'filled', color: "success"},
+                style: {
+                    color: theme.palette.common.white,
+                    backgroundColor: alpha( theme.palette.success[600], 0.9)
+                }
+            },
+            {
+                props: {variant: 'filled', color: "info"},
+                style: {
+                    color: theme.palette.common.white,
+                    backgroundColor: alpha( `#304075`, 0.9)
+                }
+            },
+            {
+                props: {variant: 'filled', color: "warning"},
+                style: {
+                    color: theme.palette.common.white,
+                    backgroundColor: alpha( theme.palette.warning[700], 0.9)
+                }
+            },
+            {
+                props: {variant: 'filled', color: "error"},
+                style: {
+                    color: theme.palette.common.white,
+                    backgroundColor: alpha( '#ef4016', 0.9)
+                }
+            },
+        ]
     }
 );
 

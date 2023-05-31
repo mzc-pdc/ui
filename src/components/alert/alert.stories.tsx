@@ -41,3 +41,18 @@ export const Color: Story = {
         )
     }
 }
+
+export const Filled: Story = {
+    render: args => {
+        return (
+            <Box>
+                <Stack gap={3} mb={3}>
+                    <Alert color={'success'} severity="success" variant={'filled'}>Standard Alert</Alert>
+                    <Alert color={'info'} severity="info" variant={'filled'}>Standard Alert</Alert>
+                    <Alert color={'warning'} severity="warning" variant={'filled'}>Standard Alert</Alert>
+                    <Alert color={'error'} severity="error" variant={'filled'}>Standard Alert</Alert>
+                </Stack>
+            </Box>
+        )
+    }
+}
