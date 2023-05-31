@@ -41,6 +41,7 @@ export * from './form-control-label';
 export * from './form-group';
 export * from './form-helper-text';
 export * from './form-label';
+export * from './grow';
 export * from './icon-button';
 export * from './input';
 export * from './input-adornment';
