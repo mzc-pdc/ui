@@ -55,6 +55,7 @@ export * from './input-adornment';
 export * from './input-base';
 export * from './input-label';
 export * from './linear-progress';
+export * from './link';
 export * from './list';
 export * from './list-item';
 export * from './list-item-avatar';
