@@ -87,6 +87,7 @@ import {
   NativeSelectTheme,
   PaginationTheme,
   PaginationItemTheme,
+  PaperTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -194,6 +195,7 @@ export const overrideTheme = {
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
     MuiPagination: { ...PaginationTheme(defaultTheme) },
     MuiPaginationItem: { ...PaginationItemTheme(defaultTheme) },
+    MuiPaper: { ...PaperTheme(defaultTheme) },
     MuiRadio: { ...RadioTheme(defaultTheme) },
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },

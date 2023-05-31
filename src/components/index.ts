@@ -72,6 +72,7 @@ export * from './native-select';
 export * from './outlined-input';
 export * from './pagination';
 export * from './pagination-item';
+export * from './paper';
 export * from './radio';
 export * from './radio-group';
 export * from './select';
