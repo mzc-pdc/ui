@@ -70,6 +70,8 @@ export * from './menu-list';
 export * from './modal';
 export * from './native-select';
 export * from './outlined-input';
+export * from './pagination';
+export * from './pagination-item';
 export * from './radio';
 export * from './radio-group';
 export * from './select';

@@ -85,6 +85,8 @@ import {
   LinkTheme,
   ModalTheme,
   NativeSelectTheme,
+  PaginationTheme,
+  PaginationItemTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -190,6 +192,8 @@ export const overrideTheme = {
     MuiModal: { ...ModalTheme(defaultTheme) },
     MuiNativeSelect: { ...NativeSelectTheme(defaultTheme) },
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
+    MuiPagination: { ...PaginationTheme(defaultTheme) },
+    MuiPaginationItem: { ...PaginationItemTheme(defaultTheme) },
     MuiRadio: { ...RadioTheme(defaultTheme) },
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },
