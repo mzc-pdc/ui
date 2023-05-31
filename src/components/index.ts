@@ -79,6 +79,8 @@ export * from './radio';
 export * from './radio-group';
 export * from './rating';
 export * from './select';
+export * from './skeleton';
+export * from './slide';
 export * from './switch';
 export * from './table';
 export * from './table-body';
@@ -91,5 +93,3 @@ export * from './table-row';
 export * from './table-sort-label';
 export * from './text-field';
 export * from './toolbar';
-
-export * from './skeleton';
