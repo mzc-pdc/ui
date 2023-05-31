@@ -84,6 +84,7 @@ import {
   ImageListItemBarTheme,
   LinkTheme,
   ModalTheme,
+  NativeSelectTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -187,6 +188,7 @@ export const overrideTheme = {
     MuiMenuItem: { ...MenuItemTheme(defaultTheme) },
     MuiMenuList: { ...MenuListTheme(defaultTheme) },
     MuiModal: { ...ModalTheme(defaultTheme) },
+    MuiNativeSelect: { ...NativeSelectTheme(defaultTheme) },
     MuiOutlinedInput: { ...OutlinedInputTheme(defaultTheme) },
     MuiRadio: { ...RadioTheme(defaultTheme) },
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
