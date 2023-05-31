@@ -90,7 +90,14 @@ import {
   PaperTheme,
   PopperTheme,
   PopoverTheme,
-  RatingTheme, SkeletonTheme,
+  RatingTheme,
+  SkeletonTheme,
+  StepTheme,
+  StepButtonTheme,
+  StepConnectorTheme,
+  StepContentTheme,
+  StepIconTheme,
+  StepLabelTheme, StepperTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -219,6 +226,13 @@ export const overrideTheme = {
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
 
     MuiSkeleton: {...SkeletonTheme(defaultTheme)},
+    MuiStep: {...StepTheme(defaultTheme)},
+    MuiStepButton: {...StepButtonTheme(defaultTheme)},
+    MuiStepConnector: {...StepConnectorTheme(defaultTheme)},
+    MuiStepContent: {...StepContentTheme(defaultTheme)},
+    MuiStepIcon: {...StepIconTheme(defaultTheme)},
+    MuiStepLabel: {...StepLabelTheme(defaultTheme)},
+    MuiStepper: {...StepperTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
