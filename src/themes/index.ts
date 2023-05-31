@@ -75,7 +75,7 @@ import {
     DialogContentTheme,
     DialogContentTextTheme,
     DialogTitleTheme,
-    ToolbarTheme
+    ToolbarTheme, PopperTheme
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -185,6 +185,8 @@ export const overrideTheme = {
         MuiTableRow: {...TableRowTheme(defaultTheme),},
         MuiTableSortLabel: {...TableSortLabelTheme(defaultTheme),},
         MuiToolbar: {...ToolbarTheme(defaultTheme),},
+
+        MuiPopper: {...PopperTheme(defaultTheme)},
         MuiCssBaseline: {
             styleOverrides: () => ({}),
         },
