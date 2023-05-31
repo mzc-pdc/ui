@@ -82,7 +82,7 @@ import {
   ImageListTheme,
   ImageListItemTheme,
   ImageListItemBarTheme,
-  LinkTheme,
+  LinkTheme, RatingTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -201,6 +201,8 @@ export const overrideTheme = {
     MuiTableRow: { ...TableRowTheme(defaultTheme) },
     MuiTableSortLabel: { ...TableSortLabelTheme(defaultTheme) },
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
+
+    MuiRating: {...RatingTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
