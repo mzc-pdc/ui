@@ -100,3 +100,4 @@ export * from './toolbar';
 export * from './speed-dial';
 export * from './speed-dial-action';
 export * from './speed-dial-icon';
+export * from './stack';
