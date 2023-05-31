@@ -58,6 +58,7 @@ export * from './list-subheader';
 export * from './menu';
 export * from './menu-item';
 export * from './menu-list';
+export * from './modal';
 export * from './outlined-input';
 export * from './radio';
 export * from './radio-group';
