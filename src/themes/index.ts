@@ -90,7 +90,7 @@ import {
   PaperTheme,
   PopperTheme,
   PopoverTheme,
-  RatingTheme,
+  RatingTheme, SliderTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -217,6 +217,8 @@ export const overrideTheme = {
     MuiTableRow: { ...TableRowTheme(defaultTheme) },
     MuiTableSortLabel: { ...TableSortLabelTheme(defaultTheme) },
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
+
+    MuiSlider: {...SliderTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
