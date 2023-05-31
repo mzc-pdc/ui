@@ -78,6 +78,7 @@ import {
   ToolbarTheme,
   DrawerTheme,
   FabTheme,
+  GridTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -150,6 +151,7 @@ export const overrideTheme = {
     MuiDivider: { ...DividerTheme(defaultTheme) },
     MuiDrawer: { ...DrawerTheme(defaultTheme) },
     MuiFab: { ...FabTheme(defaultTheme) },
+    MuiGrid: { ...GridTheme(defaultTheme) },
     MuiFilledInput: { ...FilledInputTheme(defaultTheme) },
     MuiFormControl: { ...FormControlTheme(defaultTheme) },
     MuiFormControlLabel: { ...FormControlLabelTheme(defaultTheme) },
