@@ -90,7 +90,9 @@ import {
   PaperTheme,
   PopperTheme,
   PopoverTheme,
-  RatingTheme, SkeletonTheme,
+  RatingTheme,
+  SkeletonTheme,
+  SliderTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -205,6 +207,8 @@ export const overrideTheme = {
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },
     MuiRating: { ...RatingTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },
+    MuiSkeleton: { ...SkeletonTheme(defaultTheme) },
+    MuiSlider: { ...SliderTheme(defaultTheme) },
     MuiSwitch: { ...SwitchTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
     MuiTable: { ...TableTheme(defaultTheme) },
@@ -217,8 +221,6 @@ export const overrideTheme = {
     MuiTableRow: { ...TableRowTheme(defaultTheme) },
     MuiTableSortLabel: { ...TableSortLabelTheme(defaultTheme) },
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
-
-    MuiSkeleton: {...SkeletonTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
