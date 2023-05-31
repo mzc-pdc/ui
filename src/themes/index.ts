@@ -75,7 +75,7 @@ import {
     DialogContentTheme,
     DialogContentTextTheme,
     DialogTitleTheme,
-    ToolbarTheme
+    ToolbarTheme, FabTheme
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -146,6 +146,7 @@ export const overrideTheme = {
         MuiDialogContentText: {...DialogContentTextTheme(defaultTheme),},
         MuiDialogTitle: {...DialogTitleTheme(defaultTheme),},
         MuiDivider: {...DividerTheme(defaultTheme),},
+        MuiFab: {...FabTheme(defaultTheme)},
         MuiFilledInput: {...FilledInputTheme(defaultTheme)},
         MuiFormControl: {...FormControlTheme(defaultTheme)},
         MuiFormControlLabel: {...FormControlLabelTheme(defaultTheme)},
