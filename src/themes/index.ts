@@ -90,7 +90,7 @@ import {
   PaperTheme,
   PopperTheme,
   PopoverTheme,
-  RatingTheme, SkeletonTheme,
+  RatingTheme, SkeletonTheme, StackTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -219,6 +219,7 @@ export const overrideTheme = {
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
 
     MuiSkeleton: {...SkeletonTheme(defaultTheme)},
+    MuiStack: {...StackTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
