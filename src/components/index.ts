@@ -59,6 +59,7 @@ export * from './menu';
 export * from './menu-item';
 export * from './menu-list';
 export * from './outlined-input';
+export * from './paper';
 export * from './radio';
 export * from './radio-group';
 export * from './select';

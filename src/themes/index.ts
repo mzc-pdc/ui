@@ -75,7 +75,7 @@ import {
     DialogContentTheme,
     DialogContentTextTheme,
     DialogTitleTheme,
-    ToolbarTheme
+    ToolbarTheme, PaperTheme
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -170,6 +170,7 @@ export const overrideTheme = {
         MuiMenuItem: {...MenuItemTheme(defaultTheme)},
         MuiMenuList: {...MenuListTheme(defaultTheme)},
         MuiOutlinedInput: {...OutlinedInputTheme(defaultTheme)},
+        MuiPaper: {...PaperTheme(defaultTheme)},
         MuiRadio: {...RadioTheme(defaultTheme)},
         MuiRadioGroup: {...RadioGroupTheme(defaultTheme)},
         MuiSelect: {...SelectTheme(defaultTheme)},
