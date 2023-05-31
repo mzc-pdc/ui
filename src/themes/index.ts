@@ -89,6 +89,7 @@ import {
   PaginationItemTheme,
   PaperTheme,
   PopperTheme,
+  PopoverTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -197,6 +198,7 @@ export const overrideTheme = {
     MuiPagination: { ...PaginationTheme(defaultTheme) },
     MuiPaginationItem: { ...PaginationItemTheme(defaultTheme) },
     MuiPaper: { ...PaperTheme(defaultTheme) },
+    MuiPopover: { ...PopoverTheme(defaultTheme) },
     MuiPopper: { ...PopperTheme(defaultTheme) },
     MuiRadio: { ...RadioTheme(defaultTheme) },
     MuiRadioGroup: { ...RadioGroupTheme(defaultTheme) },

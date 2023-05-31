@@ -70,9 +70,13 @@ export * from './menu-list';
 export * from './modal';
 export * from './native-select';
 export * from './outlined-input';
+<<<<<<< HEAD
 export * from './pagination';
 export * from './pagination-item';
 export * from './paper';
+=======
+export * from './popover';
+>>>>>>> e6592a13f9db755ff00725f0c1093097d8566f3a
 export * from './radio';
 export * from './radio-group';
 export * from './select';
