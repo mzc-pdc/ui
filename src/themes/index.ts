@@ -90,7 +90,7 @@ import {
   PaperTheme,
   PopperTheme,
   PopoverTheme,
-  RatingTheme, SkeletonTheme,
+  RatingTheme, SkeletonTheme, SpeedDialTheme, SpeedDialActionTheme, SpeedDialIconTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -219,6 +219,9 @@ export const overrideTheme = {
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
 
     MuiSkeleton: {...SkeletonTheme(defaultTheme)},
+    MuiSpeedDial: {...SpeedDialTheme(defaultTheme)},
+    MuiSpeedDialAction: {...SpeedDialActionTheme(defaultTheme)},
+    MuiSpeedDialIcon: {...SpeedDialIconTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
