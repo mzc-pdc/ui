@@ -95,6 +95,9 @@ import {
   SliderTheme,
   SnackbarTheme,
   SnackbarContentTheme,
+  SpeedDialTheme,
+  SpeedDialActionTheme,
+  SpeedDialIconTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -210,6 +213,9 @@ export const overrideTheme = {
     MuiRating: { ...RatingTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },
     MuiSkeleton: { ...SkeletonTheme(defaultTheme) },
+    MuiSpeedDial: { ...SpeedDialTheme(defaultTheme) },
+    MuiSpeedDialAction: { ...SpeedDialActionTheme(defaultTheme) },
+    MuiSpeedDialIcon: { ...SpeedDialIconTheme(defaultTheme) },
     MuiSnackbar: { ...SnackbarTheme(defaultTheme) },
     MuiSnackbarContent: { ...SnackbarContentTheme(defaultTheme) },
     MuiSlider: { ...SliderTheme(defaultTheme) },

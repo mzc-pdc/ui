@@ -96,3 +96,7 @@ export * from './table-row';
 export * from './table-sort-label';
 export * from './text-field';
 export * from './toolbar';
+
+export * from './speed-dial';
+export * from './speed-dial-action';
+export * from './speed-dial-icon';
