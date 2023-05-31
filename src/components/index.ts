@@ -91,3 +91,5 @@ export * from './table-row';
 export * from './table-sort-label';
 export * from './text-field';
 export * from './toolbar';
+
+export * from './skeleton';
