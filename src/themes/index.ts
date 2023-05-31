@@ -93,6 +93,8 @@ import {
   RatingTheme,
   SkeletonTheme,
   SliderTheme,
+  SnackbarTheme,
+  SnackbarContentTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -208,6 +210,8 @@ export const overrideTheme = {
     MuiRating: { ...RatingTheme(defaultTheme) },
     MuiSelect: { ...SelectTheme(defaultTheme) },
     MuiSkeleton: { ...SkeletonTheme(defaultTheme) },
+    MuiSnackbar: { ...SnackbarTheme(defaultTheme) },
+    MuiSnackbarContent: { ...SnackbarContentTheme(defaultTheme) },
     MuiSlider: { ...SliderTheme(defaultTheme) },
     MuiSwitch: { ...SwitchTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },

@@ -81,6 +81,9 @@ export * from './rating';
 export * from './select';
 export * from './skeleton';
 export * from './slide';
+export * from './slider';
+export * from './snackbar';
+export * from './snackbar-content';
 export * from './switch';
 export * from './table';
 export * from './table-body';
@@ -93,6 +96,3 @@ export * from './table-row';
 export * from './table-sort-label';
 export * from './text-field';
 export * from './toolbar';
-
-
-export * from './slider'
