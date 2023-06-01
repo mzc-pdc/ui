@@ -6,10 +6,10 @@ import { styled } from '@mui/material/styles';
 /* components */
 
 /* types */
-import { ExtendedButtonGroupProps} from './types';
+import { ButtonGroupProps} from './types';
 
 export const StyledButtonGroup = styled(MuiButtonGroup, {
     shouldForwardProp: prop => ![''].includes(String(prop)),
-})<ExtendedButtonGroupProps>(({ theme }) => ({
+})<ButtonGroupProps>(({ theme }) => ({
 
 }));
