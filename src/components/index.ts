@@ -96,6 +96,7 @@ export * from './step-icon';
 export * from './step-label';
 export * from './stepper';
 export * from './switch';
+export * from './svg-icon';
 export * from './table';
 export * from './table-body';
 export * from './table-cell';

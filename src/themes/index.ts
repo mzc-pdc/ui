@@ -106,6 +106,7 @@ import {
   StepIconTheme,
   StepLabelTheme,
   StepperTheme,
+  SvgIconTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -236,6 +237,7 @@ export const overrideTheme = {
     MuiStepLabel: { ...StepLabelTheme(defaultTheme) },
     MuiStepper: { ...StepperTheme(defaultTheme) },
     MuiSwitch: { ...SwitchTheme(defaultTheme) },
+    MuiSvgIcon: { ...SvgIconTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
     MuiTable: { ...TableTheme(defaultTheme) },
     MuiTableBody: { ...TableBodyTheme(defaultTheme) },
