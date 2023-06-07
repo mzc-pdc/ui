@@ -108,6 +108,8 @@ import {
   StepperTheme,
   SvgIconTheme,
   SwipeableDrawerTheme,
+  TabTheme,
+  TabsTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -241,6 +243,8 @@ export const overrideTheme = {
     MuiSwitch: { ...SwitchTheme(defaultTheme) },
     MuiSwipeableDrawer: { ...SwipeableDrawerTheme(defaultTheme) },
     MuiTextField: { ...TextFieldTheme(defaultTheme) },
+    MuiTab: { ...TabTheme(defaultTheme) },
+    MuiTabs: { ...TabsTheme(defaultTheme) },
     MuiTable: { ...TableTheme(defaultTheme) },
     MuiTableBody: { ...TableBodyTheme(defaultTheme) },
     MuiTableCell: { ...TableCellTheme(defaultTheme) },
