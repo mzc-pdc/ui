@@ -101,3 +101,6 @@ export * from './speed-dial';
 export * from './speed-dial-action';
 export * from './speed-dial-icon';
 export * from './stack';
+export * from './tab';
+export * from './tabs';
+export * from './tab-scroll-button';

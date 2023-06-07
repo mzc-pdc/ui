@@ -99,6 +99,8 @@ import {
   SpeedDialTheme,
   SpeedDialActionTheme,
   SpeedDialIconTheme,
+  TabTheme,
+  TabsTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -233,6 +235,8 @@ export const overrideTheme = {
     MuiTableRow: { ...TableRowTheme(defaultTheme) },
     MuiTableSortLabel: { ...TableSortLabelTheme(defaultTheme) },
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
+    MuiTab: {...TabTheme(defaultTheme)},
+    MuiTabs: {...TabsTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
