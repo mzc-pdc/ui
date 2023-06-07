@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
 import { StyledButtonGroup } from './styled';
-import type { ExtendedButtonGroupProps } from './types';
+import type { ButtonGroupProps } from './types';
 
-export const ButtonGroup: FC<ExtendedButtonGroupProps> = (props,{
+export const ButtonGroup: FC<ButtonGroupProps> = (props,{
     ...restProps
 }) => {
     return (
