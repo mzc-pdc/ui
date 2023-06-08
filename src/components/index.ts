@@ -111,4 +111,6 @@ export * from './table-pagination';
 export * from './table-row';
 export * from './table-sort-label';
 export * from './text-field';
+export * from './toggle-button';
+export * from './toggle-button-group';
 export * from './toolbar';

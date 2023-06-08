@@ -110,6 +110,7 @@ import {
   SwipeableDrawerTheme,
   TabTheme,
   TabsTheme,
+  ToggleButtonTheme, ToggleButtonGroupTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -254,6 +255,8 @@ export const overrideTheme = {
     MuiTablePagination: { ...TablePaginationTheme(defaultTheme) },
     MuiTableRow: { ...TableRowTheme(defaultTheme) },
     MuiTableSortLabel: { ...TableSortLabelTheme(defaultTheme) },
+    MuiToggleButton: {...ToggleButtonTheme(defaultTheme)},
+    MuiToggleButtonGroup: {...ToggleButtonGroupTheme(defaultTheme)},
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
