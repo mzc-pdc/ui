@@ -109,7 +109,7 @@ import {
   SvgIconTheme,
   SwipeableDrawerTheme,
   TabTheme,
-  TabsTheme,
+  TabsTheme, TooltipTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -255,6 +255,7 @@ export const overrideTheme = {
     MuiTableRow: { ...TableRowTheme(defaultTheme) },
     MuiTableSortLabel: { ...TableSortLabelTheme(defaultTheme) },
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
+    MuiTooltip: {...TooltipTheme(defaultTheme)},
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
