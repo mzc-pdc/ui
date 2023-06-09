@@ -113,6 +113,7 @@ import {
   ToggleButtonTheme,
   ToggleButtonGroupTheme,
   TooltipTheme,
+  TypographyTheme,
 } from '../components';
 
 declare module '@mui/material/styles' {
@@ -261,6 +262,7 @@ export const overrideTheme = {
     MuiToggleButtonGroup: { ...ToggleButtonGroupTheme(defaultTheme) },
     MuiToolbar: { ...ToolbarTheme(defaultTheme) },
     MuiTooltip: { ...TooltipTheme(defaultTheme) },
+    MuiTypography: { ...TypographyTheme(defaultTheme) },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
