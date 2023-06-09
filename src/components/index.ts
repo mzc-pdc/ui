@@ -114,6 +114,6 @@ export * from './text-field';
 export * from './toggle-button';
 export * from './toggle-button-group';
 export * from './toolbar';
-export * from './tooltip';
+// export * from './tooltip';
 export * from './typography';
 export * from './zoom';

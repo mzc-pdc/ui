@@ -1,7 +1,4 @@
+import { TablePaginationProps as MuiTablePaginationProps } from '@mui/material';
 
-import {TablePaginationProps as MuiTablePaginationProps} from '@mui/material';
-
-
-export interface TablePaginationProps extends MuiTablePaginationProps<any, any>  {
-}
-
+export interface TablePaginationProps
+  extends MuiTablePaginationProps<any, any> {}
