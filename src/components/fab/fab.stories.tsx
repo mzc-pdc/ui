@@ -9,7 +9,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof Fab> = {
-    title: 'Components / Floating Action Button',
+    title: 'Components/INPUTS / Floating Action Button',
     tags: ['autodocs'],
     component: Fab,
     parameters: {

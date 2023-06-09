@@ -9,7 +9,7 @@ import { OutlinedInput } from '../outlined-input';
 import { Chip } from '../chip';
 
 const meta: Meta<typeof Select> = {
-  title: 'Components/Select',
+  title: 'Components/INPUTS/Select',
   tags: ['autodocs'],
   component: Select,
   args: {

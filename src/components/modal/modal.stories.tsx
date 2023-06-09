@@ -7,7 +7,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof Modal> = {
-    title: 'Components / Modal',
+    title: 'Components/UTILS / Modal',
     tags: ['autodocs'],
     component: Modal,
     parameters: {

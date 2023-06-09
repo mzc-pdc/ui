@@ -4,7 +4,7 @@ import {Stack, Box} from "@mui/system";
 import {Alert} from "./alert";
 
 const meta: Meta<typeof Alert> = {
-    title: 'Components/Alert',
+    title: 'Components/FEEDBACK/Alert',
     component: Alert,
     tags: ['autodocs'],
     args: {

@@ -5,7 +5,7 @@ import { ButtonGroup } from './button-group';
 import {Button} from "../button";
 
 const meta = {
-    title: 'Components/Button Group',
+    title: 'Components/INPUTS/Button Group',
     tags: ['autodocs'],
     component: ButtonGroup,
     parameters: {

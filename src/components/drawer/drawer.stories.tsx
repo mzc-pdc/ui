@@ -14,7 +14,7 @@ import {Divider} from "../divider";
 import {SwipeableDrawer} from "../swipeable-drawer";
 
 const meta: Meta<typeof Drawer> = {
-    title: 'Components/Drawer',
+    title: 'Components/NAVIGATION/Drawer',
     tags: ['autodocs'],
     component: Drawer,
     args: { //storybook common args

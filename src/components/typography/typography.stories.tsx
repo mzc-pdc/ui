@@ -5,7 +5,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof Typography> = {
-    title: 'Components / Typography',
+    title: 'Components/DATA DISPLAY / Typography',
     tags: ['autodocs'],
     component: Typography,
     parameters: {

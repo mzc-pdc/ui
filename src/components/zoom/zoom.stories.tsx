@@ -7,7 +7,7 @@ import {theme} from "../../themes";
 import {Box} from "../box";
 
 const meta: Meta<typeof Zoom> = {
-    title: 'Components/Zoom',
+    title: 'Components/UTILS/TRANSITION/Zoom',
     tags: ['autodocs'],
     component: Zoom,
     parameters: {

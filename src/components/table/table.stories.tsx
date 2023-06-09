@@ -13,7 +13,7 @@ import {IconButton} from "../icon-button";
 import {Checkbox} from "../checkbox";
 
 const meta: Meta<typeof Table> = {
-    title: 'Components/Table',
+    title: 'Components/DATA DISPLAY/Table',
     tags: ['autodocs'],
     component: Table,
     parameters: {

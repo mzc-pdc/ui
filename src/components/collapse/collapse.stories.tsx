@@ -7,7 +7,7 @@ import {theme} from "../../themes";
 import {Box} from "../box";
 
 const meta: Meta<typeof Collapse> = {
-    title: 'Components/Collapse',
+    title: 'Components/UTILS/TRANSITION/Collapse',
     tags: ['autodocs'],
     component: Collapse,
     parameters: {

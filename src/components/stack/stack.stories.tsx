@@ -7,7 +7,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof Stack> = {
-    title: 'Components / Stack',
+    title: 'Components/LAYOUT / Stack',
     tags: ['autodocs'],
     component: Stack,
     parameters: {

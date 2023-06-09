@@ -9,7 +9,7 @@ import {Button} from "../button";
 
 
 const meta: Meta<typeof Stepper> = {
-    title: 'Components / Stepper',
+    title: 'Components/NAVIGATION / Stepper',
     tags: ['autodocs'],
     component: Stepper,
     parameters: {

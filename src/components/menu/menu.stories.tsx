@@ -9,7 +9,7 @@ import {MenuList} from "../menu-list";
 import {Checkbox} from "../checkbox";
 
 const meta: Meta<typeof Menu> = {
-    title: 'Components/Menu',
+    title: 'Components/ NAVIGATION / Menu',
     tags: ['autodocs'],
     component: Menu,
     parameters: {

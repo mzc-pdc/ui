@@ -4,7 +4,7 @@ import {CircularProgress} from "./circular-progress";
 import {LinearProgress} from "../linear-progress";
 
 const meta: Meta<typeof CircularProgress> = {
-    title: 'Components/Progress',
+    title: 'Components/FEEDBACK/Progress',
     tags: ['autodocs'],
     component: CircularProgress,
     args: { //storybook common args

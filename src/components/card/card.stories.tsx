@@ -13,7 +13,7 @@ import {theme} from "../../themes";
 import {IconButton} from "../icon-button";
 
 const meta: Meta<typeof Card> = {
-    title: 'Components/Card',
+    title: 'Components/SURFACES/Card',
     tags: ['autodocs'],
     component: Card,
     args: { //storybook common args

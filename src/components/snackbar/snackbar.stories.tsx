@@ -7,7 +7,7 @@ import {Alert} from "../alert";
 
 
 const meta: Meta<typeof Snackbar> = {
-    title: 'Components / Snackbar',
+    title: 'Components/FEEDBACK / Snackbar',
     tags: ['autodocs'],
     component: Snackbar,
     parameters: {

@@ -14,7 +14,7 @@ import {IconButton} from "../icon-button";
 
 
 const meta: Meta<typeof Dialog> = {
-    title: 'Components/Dialog',
+    title: 'Components/FEEDBACK/Dialog',
     tags: ['autodocs'],
     component: Dialog,
     argTypes: {

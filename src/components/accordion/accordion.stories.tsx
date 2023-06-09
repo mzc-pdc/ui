@@ -6,7 +6,7 @@ import {AccordionSummary} from "../accordion-summary";
 import {AccordionDetails} from "../accordion-details";
 
 const meta: Meta<typeof Accordion> = {
-    title: 'Components/Accordion',
+    title: 'Components/SURFACES/Accordion',
     tags: ['autodocs'],
     component: Accordion,
     args: { //storybook common args

@@ -8,7 +8,7 @@ import {ToggleButton} from "./toggle-button";
 import {ToggleButtonGroup} from "../toggle-button-group";
 
 const meta: Meta<typeof ToggleButton> = {
-    title: 'Components/ToggleButton',
+    title: 'Components/INPUTS/ToggleButton',
     component: ToggleButton,
     tags: ['autodocs'],
     args: {

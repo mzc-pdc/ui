@@ -8,7 +8,7 @@ import {Button} from '../button';
 import {IconButton} from '../icon-button';
 
 const meta: Meta<typeof Breadcrumbs> = {
-    title: 'Components/Breadcrumbs',
+    title: 'Components/NAVIGATION/Breadcrumbs',
     tags: ['autodocs'],
     component: Breadcrumbs,
     parameters: {

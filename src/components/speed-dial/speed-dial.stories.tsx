@@ -11,7 +11,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof SpeedDial> = {
-    title: 'Components / SpeedDial',
+    title: 'Components/NAVIGATION / SpeedDial',
     tags: ['autodocs'],
     component: SpeedDial,
     parameters: {

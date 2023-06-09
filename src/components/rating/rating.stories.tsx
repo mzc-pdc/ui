@@ -5,7 +5,7 @@ import {Rating} from "./rating";
 
 
 const meta: Meta<typeof Rating> = {
-    title: 'Components / Rating',
+    title: 'Components/INPUTS / Rating',
     tags: ['autodocs'],
     component: Rating,
     parameters: {

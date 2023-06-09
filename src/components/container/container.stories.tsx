@@ -4,7 +4,7 @@ import {Box} from "../box";
 import {Container} from './container';
 
 const meta: Meta<typeof Container> = {
-    title: 'Components/Container',
+    title: 'Components/LAYOUT/Container',
     tags: ['autodocs'],
     component: Container,
     parameters: {

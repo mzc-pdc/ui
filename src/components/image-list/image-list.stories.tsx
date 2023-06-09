@@ -6,7 +6,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof ImageList> = {
-    title: 'Components / ImageList',
+    title: 'Components/LAYOUT / ImageList',
     tags: ['autodocs'],
     component: ImageList,
     parameters: {

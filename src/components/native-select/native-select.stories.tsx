@@ -7,7 +7,7 @@ import {InputLabel} from "../input-label";
 
 
 const meta: Meta<typeof NativeSelect> = {
-    title: 'Components / NativeSelect',
+    title: 'Components/INPUTS / NativeSelect',
     tags: ['autodocs'],
     component: NativeSelect,
     parameters: {

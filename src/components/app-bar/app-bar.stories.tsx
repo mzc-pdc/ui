@@ -8,7 +8,7 @@ import {IconButton} from "../icon-button";
 import {Button} from "../button";
 
 const meta: Meta<typeof AppBar> = {
-    title: 'Components / AppBar',
+    title: 'Components/SURFACES / AppBar',
     tags: ['autodocs'],
     component: AppBar,
     parameters: {

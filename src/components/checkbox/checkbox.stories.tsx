@@ -6,7 +6,7 @@ import {Checkbox} from "./checkbox";
 import {theme} from "../../themes";
 
 const meta: Meta<typeof Checkbox> = {
-    title: 'Components/Checkbox',
+    title: 'Components/INPUTS/Checkbox',
     tags: ['autodocs'],
     component: Checkbox,
     args: { //storybook common args

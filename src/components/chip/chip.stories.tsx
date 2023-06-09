@@ -5,7 +5,7 @@ import {Box} from "@mui/system";
 import {Chip} from './chip';
 
 const meta: Meta<typeof Chip> = {
-    title: 'Components/Chip',
+    title: 'Components/DATA DISPLAY/Chip',
     tags: ['autodocs'],
     component: Chip,
     parameters: {
