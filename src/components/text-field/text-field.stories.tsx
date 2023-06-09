@@ -12,7 +12,7 @@ import {FormControl} from "../form-control";
 import {InputAdornment} from "../input-adornment";
 
 const meta:Meta<typeof TextField> = {
-    title: 'Components/TextField',
+    title: 'Components/INPUTS/TextField',
     tags: ['autodocs'],
     component: TextField,
     parameters: {

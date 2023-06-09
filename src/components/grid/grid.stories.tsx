@@ -7,7 +7,7 @@ import {theme} from "../../themes";
 
 
 const meta: Meta<typeof Grid> = {
-    title: 'Components / Grid',
+    title: 'Components/LAYOUT / Grid',
     tags: ['autodocs'],
     component: Grid,
     parameters: {

@@ -11,7 +11,7 @@ import {MenuItem} from "../menu-item";
 
 
 const meta: Meta<typeof Pagination> = {
-    title: 'Components / Pagination',
+    title: 'Components/NAVIGATION / Pagination',
     tags: ['autodocs'],
     component: Pagination,
     parameters: {

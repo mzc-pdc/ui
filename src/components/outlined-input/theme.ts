@@ -58,7 +58,7 @@ export const OutlinedInputTheme = (theme: any): Components["MuiOutlinedInput"]=>
             multiline: {
                 height: `auto`,
                 minHeight: 88,
-                padding: theme.spacing * 4,
+                padding: theme.spacing * 2,
                 alignItems: `flex-start`,
                 borderRadius: 2
             }

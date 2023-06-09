@@ -12,7 +12,7 @@ import {TableRow} from "../table-row";
 import {TableCell} from "../table-cell";
 
 const meta: Meta<typeof IconButton> = {
-  title: 'Components/IconButton',
+  title: 'Components/INPUTS/IconButton',
   component: IconButton,
   tags: ['autodocs'],
   args: { //storybook common args

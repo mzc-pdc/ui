@@ -4,7 +4,7 @@ import {Link} from "./link";
 
 
 const meta: Meta<typeof Link> = {
-    title: 'Components / Link',
+    title: 'Components/NAVIGATION / Link',
     tags: ['autodocs'],
     component: Link,
     parameters: {
@@ -25,7 +25,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     render: args => {
         return (
-           <Link/>
+            <Link>link</Link>
         )
     }
 }

@@ -8,7 +8,7 @@ import {Grid} from "../grid";
 
 
 const meta: Meta<typeof Tooltip> = {
-    title: 'Components / Tooltip',
+    title: 'Components/DATA DISPLAY / Tooltip',
     tags: ['autodocs'],
     component: Tooltip,
     parameters: {

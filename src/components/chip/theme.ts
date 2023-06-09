@@ -7,11 +7,11 @@ export const ChipTheme = (theme: any): Components["MuiChip"] => (
         styleOverrides: {
             root: ({ownerState}) => ({
                 "svg:first-of-type": {
-                    marginLeft: theme.spacing - 1
+                    marginLeft: `calc(${theme.spacing}px /2 )`
                 },
                 ".MuiChip-label": {
                     "+ svg": {
-                        marginRight: theme.spacing * 2
+                        marginRight: theme.spacing
                     }
                 },
             }),

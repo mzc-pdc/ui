@@ -8,7 +8,7 @@ import {Box} from "../box";
 import {Slide} from './slide';
 
 const meta: Meta<typeof Slide> = {
-    title: 'Components / Slide',
+    title: 'Components/UTILS /TRANSITION/ Slide',
     tags: ['autodocs'],
     component: Slide,
     parameters: {

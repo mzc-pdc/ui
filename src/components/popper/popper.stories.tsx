@@ -6,7 +6,7 @@ import {Button} from "../button";
 
 
 const meta: Meta<typeof Popper> = {
-    title: 'Components / Popper',
+    title: 'Components /UTILS/ Popper',
     tags: ['autodocs'],
     component: Popper,
     parameters: {

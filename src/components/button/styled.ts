@@ -18,9 +18,9 @@ export const StyledButton = styled(MuiButton, {
     }
   }),
   ...(rounded && {
-    borderRadius: theme.spacing(7),
-    paddingLeft: theme.spacing(10),
-    paddingRight: theme.spacing(10),
+    borderRadius: theme.spacing(3.5),
+    paddingLeft: theme.spacing(5),
+    paddingRight: theme.spacing(5),
   })
 }));
 

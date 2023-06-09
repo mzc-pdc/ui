@@ -5,7 +5,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof Paper> = {
-    title: 'Components / Paper',
+    title: 'Components/SURFACES / Paper',
     tags: ['autodocs'],
     component: Paper,
     parameters: {

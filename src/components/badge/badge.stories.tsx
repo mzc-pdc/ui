@@ -4,7 +4,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import {Badge} from './badge';
 
 const meta: Meta<typeof Badge> = {
-    title: 'Components/Badge',
+    title: 'Components/DATA DISPLAY/Badge',
     tags: ['autodocs'],
     component: Badge,
     parameters: {

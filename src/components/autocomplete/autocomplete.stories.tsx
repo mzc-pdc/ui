@@ -132,7 +132,7 @@ const top100Films = [
 ];
 
 const meta: Meta<typeof Autocomplete> = {
-  title: 'Components/Autocomplete',
+  title: 'Components/INPUTS/Autocomplete',
   tags: ['autodocs'],
   component: Autocomplete,
   parameters: {

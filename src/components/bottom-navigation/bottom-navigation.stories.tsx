@@ -7,7 +7,7 @@ import {BottomNavigation} from "./bottom-navigation";
 import {BottomNavigationAction} from "../bottom-navigation-action";
 
 const meta: Meta<typeof BottomNavigation> = {
-    title: 'Components/BottomNavigation',
+    title: 'Components/NAVIGATION/BottomNavigation',
     tags: ['autodocs'],
     component: BottomNavigation,
     args: { //storybook common args

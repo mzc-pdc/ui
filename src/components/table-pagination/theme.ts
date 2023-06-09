@@ -22,7 +22,7 @@ export const TablePaginationTheme = (
             fontWeight: `normal`
         },
         actions: {
-            marginLeft: `calc(${theme.spacing}px / 2)`,
+            marginLeft: `calc(${theme.spacing}px / 4)`,
         },
         displayedRows: {
             fontSize: `0.875rem`,

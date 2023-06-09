@@ -7,7 +7,7 @@ import {AvatarGroup} from "../avatar-group";
 
 
 const meta: Meta<typeof Avatar> = {
-    title: 'Components / Avatar',
+    title: 'Components/DATA DISPLAY / Avatar',
     tags: ['autodocs'],
     component: Avatar,
     parameters: {

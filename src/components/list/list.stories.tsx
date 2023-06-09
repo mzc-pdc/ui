@@ -16,7 +16,7 @@ import {ListItemIcon} from "../list-item-icon";
 import {Checkbox} from "../checkbox";
 
 const meta: Meta<typeof List> = {
-    title: 'Components/List',
+    title: 'Components/DATA DISPLAY/List',
     tags: ['autodocs'],
     component: List,
     parameters: {

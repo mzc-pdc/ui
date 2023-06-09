@@ -8,7 +8,7 @@ import {Box} from "../box";
 
 
 const meta: Meta<typeof Fade> = {
-    title: 'Components / Fade',
+    title: 'Components/UTILS /TRANSITION/ Fade',
     tags: ['autodocs'],
     component: Fade,
     parameters: {

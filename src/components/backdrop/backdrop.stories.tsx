@@ -5,7 +5,7 @@ import { Backdrop } from './backdrop';
 import {Button} from "../button";
 
 const meta: Meta<typeof Backdrop> = {
-  title: 'Components / Backdrop',
+  title: 'Components/FEEDBACK / Backdrop',
   tags: ['autodocs'],
   component: Backdrop,
   parameters: {

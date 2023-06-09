@@ -8,7 +8,7 @@ import {Box} from "../box";
 import {Grow} from './grow';
 
 const meta: Meta<typeof Grow> = {
-    title: 'Components / Grow',
+    title: 'Components/UTILS /TRANSITION/ Grow',
     tags: ['autodocs'],
     component: Grow,
     parameters: {

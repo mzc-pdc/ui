@@ -140,7 +140,7 @@ export const defaultTheme: ThemeOptions = {
   },
   palette,
   typography,
-  spacing: 4,
+  spacing: 8,
   shape: {
     borderRadius: 3,
   },
