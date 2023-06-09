@@ -116,3 +116,4 @@ export * from './toggle-button-group';
 export * from './toolbar';
 export * from './tooltip';
 export * from './typography';
+export * from './zoom';
