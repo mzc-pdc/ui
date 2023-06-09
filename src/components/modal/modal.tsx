@@ -3,15 +3,16 @@ import { ModalProps } from './types';
 
 import { StyledModal } from './styled';
 
-export const Modal: FC<ModalProps> = (props, {
-    ...restProps
-}) => {
+
+// eslint-disable-next-line react/display-name
+export const Modal: FC<ModalProps> = React.forwardRef((props,  ref) => {
     return (
+
         <StyledModal
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledModal>
-    );
-};
+    )
+});
