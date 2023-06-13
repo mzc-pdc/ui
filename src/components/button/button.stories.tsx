@@ -96,11 +96,18 @@ export const Color: Story = {
 export const Size: Story = {
     render: args => {
         return (
-            <Grid container alignItems={'center'} gap={2}>
-                <Button variant="contained" size={'small'}>Small Button</Button>
-                <Button variant="contained" size={'medium'}>Medium Button</Button>
-                <Button variant="contained" size={'large'}>Large Button</Button>
-            </Grid>
+            <Stack gap={5}>
+                <Grid container alignItems={'center'} gap={2}>
+                    <Button variant="contained" size={'small'}>Small Button</Button>
+                    <Button variant="contained" size={'medium'}>Medium Button</Button>
+                    <Button variant="contained" size={'large'}>Large Button</Button>
+                </Grid>
+                <Grid container alignItems={'center'} gap={2}>
+                    <Button variant="contained" size={'small'} startIcon={<Build/>}>Small Button</Button>
+                    <Button variant="contained" size={'medium'} startIcon={<Build/>}>Medium Button</Button>
+                    <Button variant="contained" size={'large'} startIcon={<Build/>}>Large Button</Button>
+                </Grid>
+            </Stack>
         )
     }
 }

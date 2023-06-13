@@ -9,31 +9,21 @@ export const ButtonTheme = (theme: any): Components['MuiButton'] => ({
       textTransform: `none`,
       fontWeight: '400',
       boxShadow: `none`,
-      lineHeight: 1.429,
-      '.MuiButton-startIcon': {
-        '+ span': {
-          lineHeight: `1`,
-        },
-      },
     },
     sizeSmall:{
-      // padding: `6px 8px`,
-      padding: `0.375rem 0.5rem`,
+      // padding: `3.75px 8px`,
+      padding: `0.2344rem 0.5rem`,
       fontSize: `0.875rem`,
     },
     sizeMedium: {
-      // padding: '10px 20px',
-      padding: `0.563rem 1.25rem`,
+      // padding: '7.75px 20px',
+      padding: `0.4844rem 1.25rem`,
       fontSize: `0.875rem`,
     },
     sizeLarge: {
-      // padding: `16px 32px`,
-      padding: `1rem 2rem`,
+      // padding: `15.75px 32px`,
+      padding: `0.875rem 2rem`,
       fontSize: `1rem`,
-      lineHeight: 1.5005,
-      '.MuiButton-startIcon': {
-        marginRight: `24px`,
-      },
     },
     containedInherit: {
       backgroundColor: theme.palette.secondary.light,
