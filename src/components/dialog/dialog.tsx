@@ -3,9 +3,6 @@ import { FC } from 'react';
 import { StyledDialog } from './styled';
 import { DialogProps } from './types';
 
-export const Dialog: FC<DialogProps> = (
-    props,
-    { ...restProps }
-) => {
-    return <StyledDialog {...props} {...restProps} >{props.children}</StyledDialog>;
+export const Dialog: FC<DialogProps> = props => {
+    return <StyledDialog {...props}>{props.children}</StyledDialog>;
 };
