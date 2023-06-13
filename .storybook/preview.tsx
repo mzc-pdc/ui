@@ -1,7 +1,8 @@
 import React from 'react';
 import { Preview } from '@storybook/react';
 import { ThemeProvider, StyledEngineProvider } from '@mui/system';
-import { theme } from '../src/themes';
+import { theme } from '../src';
+import {CssBaseline} from "@mui/material";
 
 const preview: Preview = {
   parameters: {
@@ -17,6 +18,7 @@ const preview: Preview = {
     Story => (
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={theme}>
+          <CssBaseline/>
           <Story />
         </ThemeProvider>
       </StyledEngineProvider>
