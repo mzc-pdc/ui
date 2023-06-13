@@ -4,5 +4,5 @@ import { StyledDialogActions } from './styled';
 import { DialogActionsProps } from './types';
 
 export const DialogActions: FC<DialogActionsProps> = props => {
-    return <StyledDialogActions {...props} {...restProps} >{props.children}</StyledDialogActions>;
+    return <StyledDialogActions {...props} >{props.children}</StyledDialogActions>;
 };
