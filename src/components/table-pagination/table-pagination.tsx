@@ -10,3 +10,4 @@ export const TablePagination: FC<TablePaginationProps> = (
 ) => {
   return <StyledTablePagination {...props} {...restProps} />;
 };
+
