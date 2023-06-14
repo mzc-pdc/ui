@@ -4,6 +4,6 @@ import { TableHeadProps } from '@mui/material';
 
 import { StyledTableHead } from './styled';
 
-export const TableHead: FC<TableHeadProps> = ({ ...restProps }) => {
-    return <StyledTableHead {...restProps} />;
+export const TableHead: FC<TableHeadProps> = props => {
+    return <StyledTableHead {...props} />;
 };

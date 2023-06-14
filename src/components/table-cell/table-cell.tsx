@@ -4,6 +4,6 @@ import { TableCellProps } from './types';
 
 import { StyledTableCell } from './styled';
 
-export const TableCell: FC<TableCellProps> = ({ ...restProps }) => {
-    return <StyledTableCell {...restProps} />;
+export const TableCell: FC<TableCellProps> = props => {
+    return <StyledTableCell {...props} />;
 };
