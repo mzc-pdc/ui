@@ -3,9 +3,8 @@ import { FC } from 'react';
 import { StyledDialogContent } from './styled';
 import { DialogContentProps } from './types';
 
-export const DialogContent: FC<DialogContentProps> = (
-    props,
-    { ...restProps }
-) => {
-    return <StyledDialogContent {...props} {...restProps} >{props.children}</StyledDialogContent>;
-};
+
+// eslint-disable-next-line react/display-name
+export const DialogContent: FC<DialogContentProps> = React.forwardRef((props, ref) => {
+    return <StyledDialogContent {...props} ref={ref}>{props.children}</StyledDialogContent>;
+});
