@@ -2,13 +2,13 @@ import React, {FC} from "react";
 import {FormGroupProps} from "@mui/material";
 import {StyledFormGroup} from "./styled";
 
-export const FormGroup: FC<FormGroupProps> = (props, {
-    ...restProps
-}) => {
+export const FormGroup: FC<FormGroupProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledFormGroup
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+FormGroup.displayName = "FormGroup";

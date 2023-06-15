@@ -3,15 +3,15 @@ import { AvatarProps } from './types';
 
 import { StyledAvatar } from './styled';
 
-export const Avatar: FC<AvatarProps> = (props, {
-  ...restProps
-}) => {
+export const Avatar: FC<AvatarProps> = React.forwardRef((props, ref) => {
   return (
     <StyledAvatar
       {...props}
-      {...restProps}
+      ref={ref}
     >
       {props.children}
     </StyledAvatar>
   );
-};
+});
+
+Avatar.displayName = "Avatar";

@@ -3,15 +3,15 @@ import { NativeSelectProps } from './types';
 
 import { StyledNativeSelect } from './styled';
 
-export const NativeSelect: FC<NativeSelectProps> = (props, {
-    ...restProps
-}) => {
+export const NativeSelect: FC<NativeSelectProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledNativeSelect
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledNativeSelect>
     );
-};
+});
+
+NativeSelect.displayName = "NativeSelect";

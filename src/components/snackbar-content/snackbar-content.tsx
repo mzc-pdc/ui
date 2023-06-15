@@ -3,13 +3,13 @@ import { SnackbarContentProps } from './types';
 
 import { StyledSnackbarContent } from './styled';
 
-export const SnackbarContent: FC<SnackbarContentProps> = (props, {
-    ...restProps
-}) => {
+export const SnackbarContent: FC<SnackbarContentProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledSnackbarContent
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+SnackbarContent.displayName = "SnackbarContent";

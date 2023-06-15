@@ -2,13 +2,13 @@ import React, {FC} from "react";
 import {OutlinedInputProps} from "@mui/material";
 import {StyledOutlinedInput} from "./styled";
 
-export const OutlinedInput: FC<OutlinedInputProps> = (props, {
-    ...restProps
-}) => {
+export const OutlinedInput: FC<OutlinedInputProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledOutlinedInput
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+OutlinedInput.displayName = "OutlinedInput";

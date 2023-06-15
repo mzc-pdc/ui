@@ -3,13 +3,13 @@ import { SpeedDialIconProps } from './types';
 
 import { StyledSpeedDialIcon } from './styled';
 
-export const SpeedDialIcon: FC<SpeedDialIconProps> = (props, {
-    ...restProps
-}) => {
+export const SpeedDialIcon: FC<SpeedDialIconProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledSpeedDialIcon
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+SpeedDialIcon.displayName = "SpeedDialIcon";

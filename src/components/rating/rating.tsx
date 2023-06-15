@@ -3,13 +3,13 @@ import { RatingProps } from './types';
 
 import { StyledRating } from './styled';
 
-export const Rating: FC<RatingProps> = (props, {
-    ...restProps
-}) => {
+export const Rating: FC<RatingProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledRating
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+Rating.displayName = "Rating";

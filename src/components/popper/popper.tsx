@@ -3,15 +3,15 @@ import { PopperProps } from './types';
 
 import { StyledPopper } from './styled';
 
-export const Popper: FC<PopperProps> = (props, {
-    ...restProps
-}) => {
+export const Popper: FC<PopperProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledPopper
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledPopper>
     );
-};
+});
+
+Popper.displayName = "Popper";

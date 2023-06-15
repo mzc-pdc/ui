@@ -3,13 +3,13 @@ import { TabScrollButtonProps } from './types';
 
 import { StyledTabScrollButton } from './styled';
 
-export const TabScrollButton: FC<TabScrollButtonProps> = (props, {
-    ...restProps
-}) => {
+export const TabScrollButton: FC<TabScrollButtonProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledTabScrollButton
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+TabScrollButton.displayName = "TabScrollButton";

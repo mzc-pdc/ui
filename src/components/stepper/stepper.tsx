@@ -3,13 +3,13 @@ import { StepperProps } from './types';
 
 import { StyledStepper } from './styled';
 
-export const Stepper: FC<StepperProps> = (props, {
-    ...restProps
-}) => {
+export const Stepper: FC<StepperProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledStepper
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+Stepper.displayName = "Stepper";

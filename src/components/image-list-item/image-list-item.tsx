@@ -3,15 +3,16 @@ import { ImageListItemProps } from './types';
 
 import { StyledImageListItem } from './styled';
 
-export const ImageListItem: FC<ImageListItemProps> = (props, {
-    ...restProps
-}) => {
+export const ImageListItem: FC<ImageListItemProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledImageListItem
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledImageListItem>
     );
-};
+
+});
+
+ImageListItem.displayName = "ImageListItem";

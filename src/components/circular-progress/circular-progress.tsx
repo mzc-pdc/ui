@@ -4,13 +4,13 @@ import {StyledCircularProgress} from "./styled";
 import {CircularProgressProps} from "./types";
 
 
-export const CircularProgress: FC<CircularProgressProps> = (props,{
-    ...restProps
-}) => {
+export const CircularProgress: FC<CircularProgressProps> = React.forwardRef((props, ref) => {
     return (
         <StyledCircularProgress
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+CircularProgress.displayName = "CircularProgress";

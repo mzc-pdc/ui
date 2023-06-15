@@ -3,15 +3,15 @@ import { AvatarGroupProps } from './types';
 
 import { StyledAvatarGroup } from './styled';
 
-export const AvatarGroup: FC<AvatarGroupProps> = (props, {
-  ...restProps
-}) => {
+export const AvatarGroup: FC<AvatarGroupProps>  = React.forwardRef((props, ref) => {
   return (
     <StyledAvatarGroup
       {...props}
-      {...restProps}
+      ref={ref}
     >
       {props.children}
     </StyledAvatarGroup>
   );
-};
+});
+
+AvatarGroup.displayName = "AvatarGroup";

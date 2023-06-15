@@ -3,13 +3,13 @@ import { FabProps } from './types';
 
 import { StyledFab } from './styled';
 
-export const Fab: FC<FabProps> = (props, {
-    ...restProps
-}) => {
+export const Fab: FC<FabProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledFab
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+Fab.displayName = "Fab";

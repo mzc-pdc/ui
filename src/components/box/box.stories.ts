@@ -23,6 +23,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default = {
   args: {
-    children: `aaaa`,
+    children: `Box`,
   },
 } satisfies Story;

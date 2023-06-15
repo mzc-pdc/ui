@@ -3,6 +3,8 @@ import { FC } from 'react';
 import { StyledDialogActions } from './styled';
 import { DialogActionsProps } from './types';
 
-export const DialogActions: FC<DialogActionsProps> = props => {
-    return <StyledDialogActions {...props} >{props.children}</StyledDialogActions>;
-};
+export const DialogActions: FC<DialogActionsProps> = React.forwardRef((props, ref) => {
+    return <StyledDialogActions {...props} ref={ref}>{props.children}</StyledDialogActions>;
+});
+
+DialogActions.displayName = "DialogActions";

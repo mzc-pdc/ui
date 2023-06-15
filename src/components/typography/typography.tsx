@@ -3,18 +3,17 @@ import { TypographyProps } from './types';
 
 import { StyledTypography } from './styled';
 
-export const Typography: FC<TypographyProps> = (props, {
-    ...restProps
-}) => {
-
+export const Typography: FC<TypographyProps> =  React.forwardRef((props, ref) => {
 
     return (
         <StyledTypography
             as={props.component}
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledTypography>
     );
-};
+});
+
+Typography.displayName = "Typography";

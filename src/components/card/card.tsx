@@ -3,9 +3,8 @@ import { FC } from 'react';
 import { StyledCard } from './styled';
 import { CardProps } from './types';
 
-export const Card: FC<CardProps> = (
-    props,
-    { ...restProps }
-) => {
-    return <StyledCard {...props} {...restProps} >{props.children}</StyledCard>;
-};
+export const Card: FC<CardProps> = React.forwardRef((props, ref) => {
+    return <StyledCard {...props} ref={ref} >{props.children}</StyledCard>;
+});
+
+Card.displayName = "Card";

@@ -3,13 +3,13 @@ import { PaginationItemProps } from './types';
 
 import { StyledPaginationItem } from './styled';
 
-export const PaginationItem: FC<PaginationItemProps> = (props, {
-    ...restProps
-}) => {
+export const PaginationItem: FC<PaginationItemProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledPaginationItem
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+PaginationItem.displayName = "PaginationItem";

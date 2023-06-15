@@ -1,8 +1,6 @@
 import React, {FC} from 'react';
 import {StyledIconButton, Spinner} from './styled';
 import {IconButtonProps} from './types';
-
-// eslint-disable-next-line react/display-name
 export const IconButton: FC<IconButtonProps> = React.forwardRef((props,  ref) => {
 
     return (
@@ -28,3 +26,5 @@ export const IconButton: FC<IconButtonProps> = React.forwardRef((props,  ref) =>
         </StyledIconButton>
     )
 });
+
+IconButton.displayName = "IconButton";

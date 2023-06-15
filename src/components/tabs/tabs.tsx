@@ -3,15 +3,15 @@ import { TabsProps } from './types';
 
 import { StyledTabs } from './styled';
 
-export const Tabs: FC<TabsProps> = (props, {
-    ...restProps
-}) => {
+export const Tabs: FC<TabsProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledTabs
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledTabs>
     );
-};
+});
+
+Tabs.displayName = "Tabs";

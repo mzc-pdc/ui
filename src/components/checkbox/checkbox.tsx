@@ -4,15 +4,15 @@ import {StyledCheckbox} from "./styled";
 import {CheckboxProps} from "./types";
 
 
-export const Checkbox: FC<CheckboxProps> = (props,{
-    ...restProps
-}) => {
+export const Checkbox: FC<CheckboxProps> = React.forwardRef((props, ref) => {
     return (
         <StyledCheckbox
             {...props}
             color={props.color}
             size={props.size}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+Checkbox.displayName = "Checkbox";

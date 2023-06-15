@@ -3,15 +3,15 @@ import { PaperProps } from './types';
 
 import { StyledPaper } from './styled';
 
-export const Paper: FC<PaperProps> = (props, {
-    ...restProps
-}) => {
+export const Paper: FC<PaperProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledPaper
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledPaper>
     );
-};
+});
+
+Paper.displayName = "Paper";

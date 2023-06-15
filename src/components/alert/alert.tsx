@@ -2,13 +2,12 @@ import React, {FC} from "react";
 import {AlertProps} from "./types";
 import {StyledAlert} from "./styled";
 
-export const Alert: FC<AlertProps> = (props, {
-    ...restProps
-}) => {
+export const Alert: FC<AlertProps>  = React.forwardRef((props, ref) => {
     return (
         <StyledAlert
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+Alert.displayName = "Alert";

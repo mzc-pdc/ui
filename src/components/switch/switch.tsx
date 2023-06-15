@@ -2,13 +2,13 @@ import React, {FC} from "react";
 import {SwitchProps} from "./types";
 import {StyledSwitch} from "./styled";
 
-export const Switch: FC<SwitchProps> = (props, {
-    ...restProps
-}) => {
+export const Switch: FC<SwitchProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledSwitch
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+Switch.displayName = "Switch";

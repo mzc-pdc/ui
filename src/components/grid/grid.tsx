@@ -3,15 +3,15 @@ import { GridProps } from './types';
 
 import { StyledGrid } from './styled';
 
-export const Grid: FC<GridProps> = (props, {
-    ...restProps
-}) => {
+export const Grid: FC<GridProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledGrid
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledGrid>
     );
-};
+});
+
+Grid.displayName = "Grid";

@@ -3,9 +3,8 @@ import { FC } from 'react';
 import { StyledAutocomplete } from './styled';
 import { IAutocompleteProps } from './types';
 
-export const Autocomplete: FC<IAutocompleteProps> = (
-  props,
-  { ...restProps }
-) => {
-  return <StyledAutocomplete {...props} {...restProps} />;
-};
+export const Autocomplete: FC<IAutocompleteProps> = React.forwardRef((props, ref) => {
+  return <StyledAutocomplete {...props} ref={ref} />;
+});
+
+Autocomplete.displayName = "Autocomplete";

@@ -1,8 +1,5 @@
 
-import {Radio, RadioProps, styled} from "@mui/material";
-
-export interface StyledRadioProps extends RadioProps {
-}
+import {Radio, styled} from "@mui/material";
 
 export const StyledRadio = styled(Radio, {
     shouldForwardProp: prop => ![''].includes(String(prop)),

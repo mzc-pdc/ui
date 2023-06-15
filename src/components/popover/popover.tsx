@@ -3,15 +3,15 @@ import { PopoverProps } from './types';
 
 import { StyledPopover } from './styled';
 
-export const Popover: FC<PopoverProps> = (props, {
-    ...restProps
-}) => {
+export const Popover: FC<PopoverProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledPopover
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledPopover>
     );
-};
+});
+
+Popover.displayName = "Popover";

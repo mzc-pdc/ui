@@ -3,13 +3,13 @@ import {FC} from 'react';
 import {StyledSelect} from "./styled";
 import {SelectProps} from './types';
 
-export const Select: FC<SelectProps> = (props, {
-    ...restProps
-}) => {
+export const Select: FC<SelectProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledSelect
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+Select.displayName = "Select";

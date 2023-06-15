@@ -3,13 +3,13 @@ import { StepIconProps } from './types';
 
 import { StyledStepIcon } from './styled';
 
-export const StepIcon: FC<StepIconProps> = (props, {
-    ...restProps
-}) => {
+export const StepIcon: FC<StepIconProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledStepIcon
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+StepIcon.displayName = "StepIcon";

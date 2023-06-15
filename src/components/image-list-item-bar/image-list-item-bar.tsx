@@ -3,13 +3,14 @@ import { ImageListItemBarProps } from './types';
 
 import { StyledImageListItemBar } from './styled';
 
-export const ImageListItemBar: FC<ImageListItemBarProps> = (props, {
-    ...restProps
-}) => {
+export const ImageListItemBar: FC<ImageListItemBarProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledImageListItemBar
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+
+});
+
+ImageListItemBar.displayName = "ImageListItemBar";

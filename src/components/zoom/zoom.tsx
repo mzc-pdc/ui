@@ -3,15 +3,15 @@ import { ZoomProps } from './types';
 
 import { StyledZoom } from './styled';
 
-export const Zoom: FC<ZoomProps> = (props, {
-    ...restProps
-}) => {
+export const Zoom: FC<ZoomProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledZoom
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledZoom>
     );
-};
+});
+
+Zoom.displayName = "Zoom";

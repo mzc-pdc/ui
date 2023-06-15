@@ -4,6 +4,8 @@ import { MenuProps } from '@mui/material';
 
 import { StyledMenu } from './styled';
 
-export const Menu: FC<MenuProps> = props => {
-    return <StyledMenu {...props} />;
-};
+export const Menu: FC<MenuProps> = React.forwardRef((props, ref) => {
+    return <StyledMenu {...props} ref={ref}/>;
+});
+
+Menu.displayName = "Menu";

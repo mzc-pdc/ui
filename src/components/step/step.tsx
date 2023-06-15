@@ -3,15 +3,15 @@ import { StepProps } from './types';
 
 import { StyledStep } from './styled';
 
-export const Step: FC<StepProps> = (props, {
-    ...restProps
-}) => {
+export const Step: FC<StepProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledStep
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledStep>
     );
-};
+});
+
+Step.displayName = "Step";

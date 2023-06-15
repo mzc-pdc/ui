@@ -1,8 +1,6 @@
 import React, {FC} from 'react';
 import {StyledButton, Children, Spinner} from './styled';
 import {ButtonProps} from './types';
-
-// eslint-disable-next-line react/display-name
 export const Button: FC<ButtonProps> = React.forwardRef((props, ref) => {
 
     return (
@@ -28,3 +26,5 @@ export const Button: FC<ButtonProps> = React.forwardRef((props, ref) => {
         </StyledButton>
     )
 });
+
+Button.displayName = "Button";

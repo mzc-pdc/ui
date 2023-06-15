@@ -3,15 +3,15 @@ import { SwipeableDrawerProps } from './types';
 
 import { StyledSwipeableDrawer} from './styled';
 
-export const SwipeableDrawer: FC<SwipeableDrawerProps> = (props, {
-    ...restProps
-}) => {
+export const SwipeableDrawer: FC<SwipeableDrawerProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledSwipeableDrawer
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledSwipeableDrawer>
     );
-};
+});
+
+SwipeableDrawer.displayName = "SwipeableDrawer";

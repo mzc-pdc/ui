@@ -3,15 +3,15 @@ import { BoxProps } from './types';
 
 import { StyledBox } from './styled';
 
-export const Box: FC<BoxProps> = (props, {
-  ...restProps
-}) => {
+export const Box: FC<BoxProps>  = React.forwardRef((props, ref) => {
   return (
     <StyledBox
         {...props}
-      {...restProps}
+        ref={ref}
     >
       {props.children}
     </StyledBox>
   );
-};
+});
+
+Box.displayName = "Box";

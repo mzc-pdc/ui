@@ -2,13 +2,13 @@ import React, {FC} from "react";
 import {FormLabelProps} from "@mui/material";
 import {StyledFormLabel} from "./styled";
 
-export const FormLabel: FC<FormLabelProps> = (props, {
-    ...restProps
-}) => {
+export const FormLabel: FC<FormLabelProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledFormLabel
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+FormLabel.displayName = "FormLabel";

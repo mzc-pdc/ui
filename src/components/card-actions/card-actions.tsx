@@ -3,9 +3,8 @@ import { FC } from 'react';
 import { StyledCardActions } from './styled';
 import { CardActionsProps } from './types';
 
-export const CardActions: FC<CardActionsProps> = (
-    props,
-    { ...restProps }
-) => {
-    return <StyledCardActions {...props} {...restProps} >{props.children}</StyledCardActions>;
-};
+export const CardActions: FC<CardActionsProps> = React.forwardRef((props, ref) => {
+    return <StyledCardActions {...props} ref={ref} >{props.children}</StyledCardActions>;
+});
+
+CardActions.displayName = "CardActions";

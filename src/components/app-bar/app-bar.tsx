@@ -3,15 +3,16 @@ import { AppBarProps } from './types';
 
 import { StyledAppBar } from './styled';
 
-export const AppBar: FC<AppBarProps> = (props, {
-  ...restProps
-}) => {
+export const AppBar: FC<AppBarProps>  = React.forwardRef((props, ref) => {
   return (
     <StyledAppBar
       {...props}
-      {...restProps}
+      ref={ref}
     >
       {props.children}
     </StyledAppBar>
   );
-};
+});
+
+
+AppBar.displayName = "AppBar";

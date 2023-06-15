@@ -2,13 +2,13 @@ import React, {FC} from "react";
 import {FormHelperTextProps} from "@mui/material";
 import {StyledFormHelperText} from "./styled";
 
-export const FormHelperText: FC<FormHelperTextProps> = (props, {
-    ...restProps
-}) => {
+export const FormHelperText: FC<FormHelperTextProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledFormHelperText
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+FormHelperText.displayName = "FormHelperText";

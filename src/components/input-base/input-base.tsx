@@ -2,13 +2,13 @@ import React, {FC} from "react";
 import {InputBaseProps} from "@mui/material";
 import {StyledInputBase} from "./styled";
 
-export const InputBase: FC<InputBaseProps> = (props, {
-    ...restProps
-}) => {
+export const InputBase: FC<InputBaseProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledInputBase
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+InputBase.displayName = "InputBase";

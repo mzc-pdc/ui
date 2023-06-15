@@ -1,14 +1,15 @@
 import * as React from 'react';
 import {FC} from 'react';
-import {StyledRadio, StyledRadioProps} from "./styled";
+import {StyledRadio} from "./styled";
+import {RadioProps} from "./types";
 
-export const Radio: FC<StyledRadioProps> = (props, {
-    ...restProps
-}) => {
+export const Radio: FC<RadioProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledRadio
             {...props}
-            {...restProps}
+            ref={ref}
         />
     )
-}
+});
+
+Radio.displayName = "Radio";

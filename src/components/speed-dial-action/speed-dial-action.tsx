@@ -3,13 +3,13 @@ import { SpeedDialActionProps } from './types';
 
 import { StyledSpeedDialAction } from './styled';
 
-export const SpeedDialAction: FC<SpeedDialActionProps> = (props, {
-    ...restProps
-}) => {
+export const SpeedDialAction: FC<SpeedDialActionProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledSpeedDialAction
             {...props}
-            {...restProps}
+            ref={ref}
         />
     );
-};
+});
+
+SpeedDialAction.displayName = "SpeedDialAction";

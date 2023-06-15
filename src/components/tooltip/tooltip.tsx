@@ -4,11 +4,11 @@ import { TooltipProps } from './types';
 import { StyledTooltip } from './styled';
 import { theme } from '../../themes';
 
-export const Tooltip: FC<TooltipProps> = (props, { ...restProps }) => {
+export const Tooltip: FC<TooltipProps> = React.forwardRef((props, ref) => {
   return (
     <StyledTooltip
       {...props}
-      {...restProps}
+      ref={ref}
       color={props.color}
       componentsProps={{
         tooltip: {
@@ -28,4 +28,6 @@ export const Tooltip: FC<TooltipProps> = (props, { ...restProps }) => {
       {props.children}
     </StyledTooltip>
   );
-};
+});
+
+Tooltip.displayName = "Tooltip";

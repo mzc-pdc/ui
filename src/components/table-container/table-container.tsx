@@ -6,3 +6,5 @@ import { StyledTableContainer } from './styled';
 export const TableContainer: FC<TableContainerProps> = React.forwardRef((props, ref) => {
     return <StyledTableContainer {...props} ref={ref}/>;
 });
+
+TableContainer.displayName = "TableContainer";

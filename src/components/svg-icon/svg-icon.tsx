@@ -3,15 +3,15 @@ import { SvgIconProps } from './types';
 
 import { StyledSvgIcon } from './styled';
 
-export const SvgIcon: FC<SvgIconProps> = (props, {
-    ...restProps
-}) => {
+export const SvgIcon: FC<SvgIconProps> =  React.forwardRef((props, ref) => {
     return (
         <StyledSvgIcon
             {...props}
-            {...restProps}
+            ref={ref}
         >
             {props.children}
         </StyledSvgIcon>
     );
-};
+});
+
+SvgIcon.displayName = "SvgIcon";

@@ -3,8 +3,6 @@ import { ModalProps } from './types';
 
 import { StyledModal } from './styled';
 
-
-// eslint-disable-next-line react/display-name
 export const Modal: FC<ModalProps> = React.forwardRef((props,  ref) => {
     return (
 
@@ -16,3 +14,5 @@ export const Modal: FC<ModalProps> = React.forwardRef((props,  ref) => {
         </StyledModal>
     )
 });
+
+Modal.displayName = "Modal";

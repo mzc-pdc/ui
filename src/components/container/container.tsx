@@ -4,6 +4,8 @@ import { ContainerProps } from './types';
 
 import { StyledContainer } from './styled';
 
-export const Container: FC<ContainerProps> = (props,{ ...restProps }) => {
-    return <StyledContainer {...props} {...restProps} >{props.children}</StyledContainer>;
-};
+export const Container: FC<ContainerProps> = React.forwardRef((props, ref) => {
+    return <StyledContainer {...props} ref={ref} >{props.children}</StyledContainer>;
+});
+
+Container.displayName = "Container";

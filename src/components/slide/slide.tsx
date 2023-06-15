@@ -3,15 +3,15 @@ import { SlideProps } from './types';
 
 import { StyledSlide } from './styled';
 
-export const Slide: FC<SlideProps> = (props, {
-  ...restProps
-}) => {
+export const Slide: FC<SlideProps> = React.forwardRef((props, ref) => {
   return (
     <StyledSlide
         {...props}
-      {...restProps}
+      ref={ref}
     >
       {props.children}
     </StyledSlide>
   );
-};
+});
+
+Slide.displayName = "Slide";

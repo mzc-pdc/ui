@@ -4,9 +4,9 @@ import { BadgeProps } from './types';
 
 import { StyledBadge } from './styled';
 
-export const Badge: FC<BadgeProps> = (
-    props,
-    { ...restProps }) => {
-  return <StyledBadge {...props} {...restProps} >{props.children}</StyledBadge>;
-};
+export const Badge: FC<BadgeProps> = React.forwardRef((props, ref) => {
+  return <StyledBadge {...props} ref={ref} >{props.children}</StyledBadge>;
+});
+
+Badge.displayName = "Badge";
 
