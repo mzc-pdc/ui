@@ -5,7 +5,7 @@ export const FormHelperTextTheme = (theme:any): Components["MuiFormHelperText"]=
         defaultProps: {},
         styleOverrides: {
             root: {
-                marginTop: theme.spacing * 2,
+                marginTop: theme.spacing,
                 marginLeft: 0,
                 fontSize: `0.875rem`,
             }

@@ -50,31 +50,31 @@ export const typography = {
     fontFamily: `Noto Sans KR, -apple-system , Malgun Gothic, sans-serif , Apple SD Gothic Neo`,
     h1: {
         fontWeight: 'bold',
-        fontSize: `1.75rem`,
+        fontSize: `1.75rem`, //28
     },
     h2: {
         fontWeight: 'bold',
-        fontSize: `1.5rem`,
+        fontSize: `1.5rem`, //24
     },
     h3: {
         fontWeight: 'bold',
-        fontSize: `1.25rem`,
+        fontSize: `1.25rem`, //20
     },
     subtitle1: {
         fontWeight: 'bold',
-        fontSize: `1.125rem`,
+        fontSize: `1.125rem`, //18
     },
     subtitle2: {
         fontWeight: 'bold',
-        fontSize: `1rem`,
+        fontSize: `1rem`, //16
     },
     subtitle3: {
         fontWeight: 'bold',
-        fontSize: `0.938rem`,
+        fontSize: `0.938rem`, //15
     },
     body1: {
         fontWeight: '500',
-        fontSize: `0.875rem`,
+        fontSize: `0.875rem`,//14
     },
     body1Bold: {
         fontWeight: 'bold',
@@ -86,7 +86,7 @@ export const typography = {
     },
     body2: {
         fontWeight: '500',
-        fontSize: `0.813rem`,
+        fontSize: `0.813rem`,//13
     },
     body2Bold: {
         fontWeight: 'bold',
@@ -98,7 +98,7 @@ export const typography = {
     },
     body3: {
         fontWeight: '500',
-        fontSize: `0.75rem`,
+        fontSize: `0.75rem`,//12
     },
     body3Bold: {
         fontWeight: 'bold',
@@ -110,7 +110,7 @@ export const typography = {
     },
     body4: {
         fontWeight: '500',
-        fontSize: `0.688rem`,
+        fontSize: `0.688rem`,//11
     },
     body4Bold: {
         fontWeight: 'bold',

@@ -8,7 +8,7 @@ export const AutocompleteTheme = (
   styleOverrides: {
     root: ({ ownerState }) => ({
       '.MuiInputBase-root': {
-        gap: theme.spacing * 2,
+        gap: theme.spacing / 2,
         '.MuiAutocomplete-input': {
           padding: `0.95px 4px 0.95px 5px`,
         },
@@ -22,9 +22,9 @@ export const AutocompleteTheme = (
       '&:not(div)': {
         color: theme.palette.primary.contrastText,
         backgroundColor: theme.palette.primary.main,
-        paddingLeft: theme.spacing * 2,
-        paddingRight: theme.spacing * 2,
-        borderRadius: theme.spacing * 4,
+        paddingLeft: theme.spacing ,
+        paddingRight: theme.spacing ,
+        borderRadius: theme.spacing * 2,
       },
     },
     popper: {

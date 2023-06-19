@@ -32,6 +32,15 @@ export const Playground: Story = {
     },
 };
 
+export const Rounded: Story = {
+    args: {
+        label: `Rounded Chip`,
+        rounded: true,
+        variant: 'filled',
+        size: 'medium'
+    },
+};
+
 export const Color: Story = {
     render: args => {
         return (
