@@ -19,7 +19,7 @@ import {
 import {theme} from "../../themes";
 
 const meta: Meta<typeof Chip> = {
-    title: 'Features/Search',
+    title: 'TEMPLATE/Search',
     tags: ['autodocs'],
     parameters: {
         docs: {
