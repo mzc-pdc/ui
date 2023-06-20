@@ -9,6 +9,7 @@ declare module '@mui/material/Button' {
         grayscale: true;
         grayscaleSecondary: true;
         default: true;
+        white: true;
     }
 }
 export interface ButtonProps extends MuiButtonProps {

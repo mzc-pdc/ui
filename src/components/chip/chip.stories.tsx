@@ -1,8 +1,15 @@
 import { Meta, StoryObj} from "@storybook/react";
-import {Grid} from "@mui/material";
 import React from "react";
-import {Box} from "@mui/system";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CloseIcon from '@mui/icons-material/Close';
+import {Grid} from "../grid";
+import {Box} from "../box";
 import {Chip} from './chip';
+import { Typography } from "../typography";
+import {Avatar} from "../avatar";
+import {Divider} from "../divider";
+import { Badge } from "../badge";
 
 const meta: Meta<typeof Chip> = {
     title: 'Components/DATA DISPLAY/Chip',
@@ -32,6 +39,26 @@ export const Playground: Story = {
     },
 };
 
+export const WithAvatar: Story = {
+    args: {
+        label: `Avatar Chip`,
+        variant: 'outlined',
+        size: 'medium',
+        avatar: <Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />,
+        deleteIcon: <CloseIcon fontSize={'small'}/>
+    },
+};
+export const WithIcon: Story = {
+    args: {
+        label: `Icon Chip`,
+        variant: 'outlined',
+        size: 'medium',
+        icon:<AccountCircleIcon />,
+        deleteIcon: <CloseIcon fontSize={'small'}/>
+    },
+};
+
+
 export const Rounded: Story = {
     args: {
         label: `Rounded Chip`,
@@ -40,6 +67,238 @@ export const Rounded: Story = {
         size: 'medium'
     },
 };
+
+export const Filter: Story = {
+    parameters: {
+        docs: {
+            description: {
+                story: `list filter : <a href="/docs/template-advanced-search--docs">사용 예시 바로 가기</a>`,
+            },
+        },
+    },
+    render: args => {
+        return (
+            <Box>
+                <Chip
+                    variant={'filter'}
+                    size={'medium'}
+                    rounded
+                    label={
+                        <Grid container gap={1}  alignItems={'center'}>
+                            <Typography variant={'body3Regular'}>
+                                Label
+                            </Typography>
+                            <Box>
+                                <ArrowDropDownIcon/>
+                            </Box>
+                        </Grid>
+                    }
+                />
+                <br/>
+                <br/>
+                <Chip
+                    active
+                    variant={'filter'}
+                    size={'medium'}
+                    rounded
+                    label={
+                        <Grid container gap={1} alignItems={'center'}>
+                            <Typography variant={'body3Regular'} color={'primary'}>
+                                Label
+                            </Typography>
+                            <Typography>
+                                Keyword
+                            </Typography>
+                            <Badge
+                                badgeContent={<>+ 3</>}
+                                color="primary"
+                                position={false}
+                            />
+                            <Box>
+                                <ArrowDropDownIcon/>
+                            </Box>
+                        </Grid>
+                    }
+                />
+                <br/>
+                <br/>
+                <Chip
+                    disabled
+                    variant={'filter'}
+                    size={'medium'}
+                    rounded
+                    label={
+                        <Grid container gap={1}  alignItems={'center'}>
+                            <Typography variant={'body3Regular'}>
+                                Label
+                            </Typography>
+                            <Box>
+                                <ArrowDropDownIcon/>
+                            </Box>
+                        </Grid>
+                    }
+                />
+            </Box>
+
+        )
+    }
+}
+
+export const Search: Story = {
+    parameters: {
+        docs: {
+            description: {
+                story: `advance search : <a href="/docs/template-advanced-search--docs">사용 예시 바로 가기</a>`,
+            },
+        },
+    },
+    render: args => {
+        return (
+            <Box>
+                <Grid container>
+                    <Grid item sx={{padding: 3}}>
+                        <Chip
+                            variant={'search'}
+                            size={'medium'}
+                            label={
+                                <Grid container gap={1}  alignItems={'center'}>
+                                        <Typography variant={'body3Regular'}>
+                                            Label
+                                        </Typography>
+                                        <Box>
+                                            <ArrowDropDownIcon/>
+                                        </Box>
+                                </Grid>
+                            }
+                            onClick={() => {console.log('onClick')}}
+                        />
+                    </Grid>
+                    <Grid item sx={{padding: 3}}>
+                        <Chip
+                            variant={'search'}
+                            size={'medium'}
+                            label={
+                                <Grid container gap={1}  alignItems={'center'}>
+                                    <Typography variant={'body3Regular'}>
+                                        Label
+                                    </Typography>
+                                    <Box>
+                                        <ArrowDropDownIcon/>
+                                    </Box>
+                                    <Divider flexItem orientation={'vertical'} sx={{ml: 1}}/>
+                                </Grid>
+                            }
+                            onClick={() => {console.log('onClick')}}
+                            onDelete={() => {
+                                console.log('onDelete')
+                            }}
+                        />
+                    </Grid>
+                </Grid>
+                <Grid container>
+                    <Grid item sx={{padding: 3}}>
+                        <Chip
+                            active
+                            variant={'search'}
+                            size={'medium'}
+                            label={
+                                <Grid container gap={1} alignItems={'center'}>
+                                    <Typography variant={'body3Regular'} color={'primary'}>
+                                        Label
+                                    </Typography>
+                                    <Typography>
+                                        Keyword
+                                    </Typography>
+                                    <Badge
+                                        badgeContent={<>+ 3</>}
+                                        color="primary"
+                                        position={false}
+                                    />
+                                    <Box>
+                                        <ArrowDropDownIcon/>
+                                    </Box>
+                                </Grid>
+                            }
+                            onClick={() => {console.log('onClick')}}
+                        />
+                    </Grid>
+                    <Grid item sx={{padding: 3}}>
+                        <Chip
+                            active
+                            variant={'search'}
+                            size={'medium'}
+                            label={
+                                <Grid container gap={1} alignItems={'center'}>
+                                    <Typography variant={'body3Regular'} color={'primary'}>
+                                        Label
+                                    </Typography>
+                                    <Typography>
+                                        Keyword
+                                    </Typography>
+                                    <Badge
+                                        badgeContent={<>+ 3</>}
+                                        color="primary"
+                                        position={false}
+                                    />
+                                    <Box>
+                                        <ArrowDropDownIcon/>
+                                    </Box>
+                                    <Divider flexItem orientation={'vertical'}/>
+                                </Grid>
+                            }
+                            onClick={() => {console.log('onClick')}}
+                            onDelete={() => {
+                                console.log('onDelete')
+                            }}
+                        />
+                    </Grid>
+                </Grid>
+                <Grid container>
+                    <Grid item sx={{padding: 3}}>
+                        <Chip
+                            disabled
+                            variant={'search'}
+                            size={'medium'}
+                            label={
+                                <Grid container gap={1}  alignItems={'center'}>
+                                    <Typography variant={'body3Regular'}>
+                                        Label
+                                    </Typography>
+                                    <Box>
+                                        <ArrowDropDownIcon/>
+                                    </Box>
+                                </Grid>
+                            }
+                            onClick={() => {console.log('onClick')}}
+                        />
+                    </Grid>
+                    <Grid item sx={{padding: 3}}>
+                        <Chip
+                            disabled
+                            variant={'search'}
+                            size={'medium'}
+                            label={
+                                <Grid container gap={1}  alignItems={'center'}>
+                                    <Typography variant={'body3Regular'}>
+                                        Label
+                                    </Typography>
+                                    <Box>
+                                        <ArrowDropDownIcon/>
+                                    </Box>
+                                    <Divider flexItem orientation={'vertical'} sx={{ml: 1}}/>
+                                </Grid>
+                            }
+                            onClick={() => {console.log('onClick')}}
+                            onDelete={() => {
+                                console.log('onDelete')
+                            }}
+                        />
+                    </Grid>
+                </Grid>
+            </Box>
+        )
+    }
+}
 
 export const Color: Story = {
     render: args => {
