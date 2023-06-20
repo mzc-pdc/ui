@@ -28,6 +28,7 @@ export * from './chip';
 export * from './circular-progress';
 export * from './collapse';
 export * from './container';
+export * from './click-away-listener';
 export * from './dialog';
 export * from './dialog-actions';
 export * from './dialog-content';
