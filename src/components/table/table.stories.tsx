@@ -56,15 +56,12 @@ export const Playgroud: Story = {
                 <Table>
                     <TableHead>
                         <TableRow >
-                            <TableCell padding={"checkbox"}>
-                                <Checkbox color={'secondary'}/>
-                            </TableCell>
                             <TableCell>Dessert (100g serving)</TableCell>
                             <TableCell align="right">Calories</TableCell>
                             <TableCell align="right">Fat&nbsp;(g)</TableCell>
                             <TableCell align="right">Carbs&nbsp;(g)</TableCell>
                             <TableCell align="right">Protein&nbsp;(g)</TableCell>
-                            <TableCell align="right"><SettingsIcon/></TableCell>
+                            <TableCell align="right"><SettingsIcon fontSize='small' /></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -73,10 +70,8 @@ export const Playgroud: Story = {
                                 hover
                                 key={row.name}
                             >
-                                <TableCell padding={"checkbox"}>
-                                    <Checkbox color={'secondary'}/>
-                                </TableCell>
-                                <TableCell align="left">
+                                <TableCell>
+                                    <Checkbox color='secondary' sx={{mr:1}}/>
                                     {row.name}
                                 </TableCell>
                                 <TableCell align="right" >{row.calories}</TableCell>
@@ -88,7 +83,7 @@ export const Playgroud: Story = {
                                         size={'medium'}
                                         circled
                                     >
-                                        <MoreHorizIcon/>
+                                        <MoreHorizIcon fontSize='small' />
                                     </IconButton>
                                 </TableCell>
                             </TableRow>
@@ -107,9 +102,6 @@ export const Status: Story = {
                 <Table>
                     <TableHead>
                         <TableRow >
-                            <TableCell padding={"checkbox"}>
-                                <Checkbox color='secondary'/>
-                            </TableCell>
                             <TableCell>
                                 Dessert (100g serving)
                             </TableCell>
@@ -117,16 +109,14 @@ export const Status: Story = {
                             <TableCell align="right">Fat&nbsp;(g)</TableCell>
                             <TableCell align="right">Carbs&nbsp;(g)</TableCell>
                             <TableCell align="right">Protein&nbsp;(g)</TableCell>
-                            <TableCell align="right"><SettingsIcon/></TableCell>
+                            <TableCell align="right"><SettingsIcon fontSize='small' /></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         <TableRow
                         >
-                            <TableCell padding={"checkbox"}>
+                            <TableCell>
                                 <Checkbox color='secondary'/>
-                            </TableCell>
-                            <TableCell align="left">
                                 Frozen yoghurt
                             </TableCell>
                             <TableCell align="right" >159</TableCell>
@@ -138,17 +128,15 @@ export const Status: Story = {
                                     size={'medium'}
                                     circled
                                 >
-                                    <MoreHorizIcon/>
+                                    <MoreHorizIcon fontSize='small' />
                                 </IconButton>
                             </TableCell>
                         </TableRow>
                         <TableRow
                             checked
                         >
-                            <TableCell padding={"checkbox"}>
+                            <TableCell>
                                 <Checkbox color='secondary'/>
-                            </TableCell>
-                            <TableCell align="left">
                                 Frozen yoghurt
                             </TableCell>
                             <TableCell align="right" >159</TableCell>
@@ -160,19 +148,16 @@ export const Status: Story = {
                                     size={'medium'}
                                     circled
                                 >
-                                    <MoreHorizIcon/>
+                                    <MoreHorizIcon fontSize='small' />
                                 </IconButton>
                             </TableCell>
                         </TableRow>
                         <TableRow
                             selected
                         >
-                            <TableCell padding={"checkbox"}>
+                            <TableCell>
                                 <Checkbox color='secondary'/>
-                            </TableCell>
-                            <TableCell align="left">
                                 Frozen yoghurt
-
                             </TableCell>
                             <TableCell align="right" >159</TableCell>
                             <TableCell align="right">6</TableCell>
@@ -183,17 +168,15 @@ export const Status: Story = {
                                     size={'medium'}
                                     circled
                                 >
-                                    <MoreHorizIcon/>
+                                    <MoreHorizIcon fontSize='small' />
                                 </IconButton>
                             </TableCell>
                         </TableRow>
                         <TableRow
                             status={'warning'}
                         >
-                            <TableCell padding={"checkbox"}>
+                            <TableCell>
                                 <Checkbox color='secondary'/>
-                            </TableCell>
-                            <TableCell align="left">
                                 Frozen yoghurt
                             </TableCell>
                             <TableCell align="right" >159</TableCell>
@@ -205,17 +188,15 @@ export const Status: Story = {
                                     size={'medium'}
                                     circled
                                 >
-                                    <MoreHorizIcon/>
+                                    <MoreHorizIcon fontSize='small' />
                                 </IconButton>
                             </TableCell>
                         </TableRow>
                         <TableRow
                             status={'error'}
                         >
-                            <TableCell padding={"checkbox"}>
+                            <TableCell>
                                 <Checkbox color='secondary'/>
-                            </TableCell>
-                            <TableCell align="left">
                                 Frozen yoghurt
                             </TableCell>
                             <TableCell align="right" >159</TableCell>
@@ -227,7 +208,7 @@ export const Status: Story = {
                                     size={'medium'}
                                     circled
                                 >
-                                    <MoreHorizIcon/>
+                                    <MoreHorizIcon fontSize='small' />
                                 </IconButton>
                             </TableCell>
                         </TableRow>
@@ -246,15 +227,12 @@ export const Small: Story = {
                 <Table size={'small'}>
                     <TableHead>
                         <TableRow >
-                            <TableCell padding={"checkbox"}>
-                                <Checkbox color='secondary'/>
-                            </TableCell>
                             <TableCell>Dessert (100g serving)</TableCell>
                             <TableCell align="right">Calories</TableCell>
                             <TableCell align="right">Fat&nbsp;(g)</TableCell>
                             <TableCell align="right">Carbs&nbsp;(g)</TableCell>
                             <TableCell align="right">Protein&nbsp;(g)</TableCell>
-                            <TableCell align="right"><SettingsIcon/></TableCell>
+                            <TableCell align="right"><SettingsIcon fontSize='small' /></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -263,10 +241,8 @@ export const Small: Story = {
                                 hover
                                 key={row.name}
                             >
-                                <TableCell padding={"checkbox"}>
-                                    <Checkbox color='secondary'/>
-                                </TableCell>
-                                <TableCell align="left">
+                                <TableCell>
+                                    <Checkbox color='secondary' sx={{mr:1}}/>
                                     {row.name}
                                 </TableCell>
                                 <TableCell align="right" >{row.calories}</TableCell>
@@ -278,7 +254,7 @@ export const Small: Story = {
                                         size={'medium'}
                                         circled
                                     >
-                                        <MoreHorizIcon/>
+                                        <MoreHorizIcon fontSize='small' />
                                     </IconButton>
                                 </TableCell>
                             </TableRow>
@@ -298,15 +274,12 @@ export const Medium: Story = {
                 <Table>
                     <TableHead>
                         <TableRow >
-                            <TableCell padding={"checkbox"}>
-                                <Checkbox color='secondary'/>
-                            </TableCell>
                             <TableCell>Dessert (100g serving)</TableCell>
                             <TableCell align="right">Calories</TableCell>
                             <TableCell align="right">Fat&nbsp;(g)</TableCell>
                             <TableCell align="right">Carbs&nbsp;(g)</TableCell>
                             <TableCell align="right">Protein&nbsp;(g)</TableCell>
-                            <TableCell align="right"><SettingsIcon/></TableCell>
+                            <TableCell align="right"><SettingsIcon fontSize='small' /></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -315,10 +288,8 @@ export const Medium: Story = {
                                 hover
                                 key={row.name}
                             >
-                                <TableCell padding={"checkbox"}>
-                                    <Checkbox color='secondary'/>
-                                </TableCell>
-                                <TableCell align="left">
+                                <TableCell>
+                                    <Checkbox color='secondary' sx={{mr:1}}/>
                                     {row.name}
                                 </TableCell>
                                 <TableCell align="right" >{row.calories}</TableCell>
@@ -330,7 +301,7 @@ export const Medium: Story = {
                                         size={'medium'}
                                         circled
                                     >
-                                        <MoreHorizIcon/>
+                                        <MoreHorizIcon fontSize='small' />
                                     </IconButton>
                                 </TableCell>
                             </TableRow>
@@ -351,15 +322,12 @@ export const large: Story = {
                 <Table size={'large'}>
                     <TableHead>
                         <TableRow >
-                            <TableCell padding={"checkbox"} >
-                                <Checkbox color='secondary'/>
-                            </TableCell>
                             <TableCell >Dessert (100g serving)</TableCell>
                             <TableCell align="right" >Calories</TableCell>
                             <TableCell align="right" >Fat&nbsp;(g)</TableCell>
                             <TableCell align="right" >Carbs&nbsp;(g)</TableCell>
                             <TableCell align="right" >Protein&nbsp;(g)</TableCell>
-                            <TableCell align="right" ><SettingsIcon/></TableCell>
+                            <TableCell align="right" ><SettingsIcon fontSize='small' /></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -368,10 +336,8 @@ export const large: Story = {
                                 hover
                                 key={row.name}
                             >
-                                <TableCell padding={"checkbox"} >
-                                    <Checkbox color='secondary'/>
-                                </TableCell>
-                                <TableCell align="left" >
+                                <TableCell>
+                                    <Checkbox color='secondary' sx={{mr:1}}/>
                                     {row.name}
                                 </TableCell>
                                 <TableCell align="right"  >{row.calories}</TableCell>
@@ -383,7 +349,7 @@ export const large: Story = {
                                         size={'medium'}
                                         circled
                                     >
-                                        <MoreHorizIcon/>
+                                        <MoreHorizIcon fontSize='small' />
                                     </IconButton>
                                 </TableCell>
                             </TableRow>
