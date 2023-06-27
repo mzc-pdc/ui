@@ -6,6 +6,7 @@ declare module '@mui/material/CircularProgress' {
         grayscale: true;
         grayscaleSecondary: true;
         default: true;
+        white: true;
     }
 }
 
