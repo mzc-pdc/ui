@@ -45,8 +45,9 @@ export const playground: Story = {
 
 
     interface LabelType {
-      name: string;
+      name?: string;
       description?: string;
+      label?: string;
     }
 
     const labels = [
@@ -428,8 +429,9 @@ interface SearchProps {
 }
 export const AdvancedSearch: FC<SearchProps> = ({isCheck}) => {
   interface LabelType {
-    name: string;
+    name?: string;
     description?: string;
+    label?: string;
   }
 
   const labels = [

@@ -51,7 +51,7 @@ export const Default: Story = {
     const [editAttribution, setEditAttribution] = useState(false);
     const [editTags, setEditTags] = useState(false);
     const threshold = 255;
-    const handleChange = event => {
+    const handleChange = (event: { target: { value: any; }; }) => {
       const newText = event.target.value;
       setText(newText);
     };

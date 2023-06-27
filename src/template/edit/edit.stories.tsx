@@ -43,7 +43,7 @@ export const BigTitle: Story = {
     const [edit, setEdit] = useState(false);
     const [text, setText] = useState('TitleName0101010101010101010101010101010101010101010101010101010101010101010101010101010101');
     const threshold = 255;
-    const handleChange = event => {
+    const handleChange = (event: { target: { value: any; }; }) => {
       const newText = event.target.value;
       setText(newText);
     };
@@ -149,7 +149,7 @@ export const SmallTitle: Story = {
     const [edit, setEdit] = useState(false);
     const [text, setText] = useState('SmallTitleName');
     const threshold = 255;
-    const handleChange = event => {
+    const handleChange = (event: { target: { value: any; }; }) => {
       const newText = event.target.value;
       setText(newText);
     };

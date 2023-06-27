@@ -97,7 +97,7 @@ export const nextDepthPage: Story = {
     const [edit, setEdit] = useState(false);
     const [text, setText] = useState('TitleName01');
     const threshold = 255;
-    const handleChange = event => {
+    const handleChange = (event: { target: { value: any; }; }) => {
       const newText = event.target.value;
       setText(newText);
     };
