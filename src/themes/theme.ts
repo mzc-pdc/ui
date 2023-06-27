@@ -112,7 +112,7 @@ import {
   TabsTheme,
   ToggleButtonTheme,
   ToggleButtonGroupTheme,
-  // TooltipTheme,
+  TooltipTheme,
   TypographyTheme,
 } from '../components';
 
@@ -261,7 +261,7 @@ export const overrideComponents = (theme: any) => {
     MuiToggleButtonGroup: { ...ToggleButtonGroupTheme(theme) },
     MuiToolbar: { ...ToolbarTheme(theme) },
     // MuiTooltip: { ...TooltipTheme(theme) },
-    MuiTypography: { ...TypographyTheme(theme) },
+    // MuiTypography: { ...TypographyTheme(theme) },
     MuiCssBaseline: {
       styleOverrides: () => ({}),
     },
