@@ -1,7 +1,7 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
 const config: StorybookConfig = {
   stories: [
-    '../src/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
     // '../packages/**/*.stories.@(js|j/**/sx|ts|tsx)', // TODO: lerna error
   ],
   addons: [

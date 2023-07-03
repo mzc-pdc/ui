@@ -1,0 +1,92 @@
+
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Theme/Typography" />
+
+export const typography = {
+  type: {
+    primary: '"Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    regular: 400,
+    medium: 500,
+    bold: 700,
+  },
+  size: {
+    s1: 11,
+    s2: 12,
+    s3: 13,
+    m1: 14,
+    m2: 15,
+    m3: 16,
+    l1: 18,
+    l2: 20,
+    l3: 24,
+    l4: 28,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+**Font:** Noto Sans KR
+
+**Weights:** 400(regular), 500(medium), 700(bold)
+
+## Regular
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+    Number(typography.size.l4),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Medium
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+    Number(typography.size.l4),
+  ]}
+  fontWeight={typography.weight.medium}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Bold
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+    Number(typography.size.l4),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
